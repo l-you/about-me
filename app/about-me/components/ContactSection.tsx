@@ -7,10 +7,11 @@ import {
 	CardTitle,
 } from '@/components/ui/card'
 import {Mail} from 'lucide-react'
-import {type FunctionComponent} from 'react'
+import {Suspense, type FunctionComponent} from 'react'
 import {GitHubIcon, RedditIcon, XIcon} from './Icons'
 import MoreContactsSection from './MoreContactsSection'
 import ContactButton from './ContextButton'
+import { connectButtonClassName, ConntectButtonContent } from './connectButtonSkeleton'
 
 export const ContactSection: FunctionComponent = () => {
 
@@ -59,7 +60,11 @@ export const ContactSection: FunctionComponent = () => {
 							</div>
 
 							{/* Expandable section */}
-							<MoreContactsSection />
+							<div className="mt-6">
+							 <Suspense fallback={<div className={connectButtonClassName}><ConntectButtonContent isExpanded={false} /></div>}>
+								<MoreContactsSection />
+							 </Suspense>
+							</div>
 						</CardContent>
 					</Card>
 

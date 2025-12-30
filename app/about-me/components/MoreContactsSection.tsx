@@ -1,12 +1,13 @@
 'use client'
 import {Separator} from '@/components/ui/separator'
-import {BookOpen, ChevronDown, ExternalLink} from 'lucide-react'
+import {BookOpen, ExternalLink} from 'lucide-react'
 import {useMemo, type FunctionComponent} from 'react'
 import { NpmIcon, PackagistIcon} from './Icons'
-import { Button } from '@/components/ui/button'
+
 import { usePathname, useSearchParams } from 'next/navigation'
 import ContactButton from './ContextButton'
 import Link from 'next/link'
+import { connectButtonClassName, ConntectButtonContent } from './connectButtonSkeleton'
 const MoreContactsSection:FunctionComponent = () => {
     const searchParams = useSearchParams()
     const isExpanded = searchParams.get('more_contacts') === '1'
@@ -23,18 +24,11 @@ const MoreContactsSection:FunctionComponent = () => {
             return `${pathname}?${params.toString()}`
         },[isExpanded, pathname, searchParams])
   
-    return <div className="mt-6">
-								<Button
-									variant="ghost"
-									className="w-full gap-2"
-									 asChild>
-									<Link href={toggledLink} scroll={false}>
-                                    <ChevronDown
-										className={`size-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
-									/>
-									More ways to connect
+    return <>
+								
+									<Link className={connectButtonClassName} href={toggledLink} scroll={false}>
+                                    <ConntectButtonContent isExpanded={isExpanded}/>
                                     </Link>
-								</Button>
 
 								{isExpanded && (
 									<div className="mt-6 space-y-4 animate-in fade-in slide-in-from-top-2">
@@ -75,6 +69,6 @@ const MoreContactsSection:FunctionComponent = () => {
 										</div>
 									</div>
 								)}
-							</div>
+							</>
 }
 export default MoreContactsSection
