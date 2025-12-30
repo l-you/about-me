@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.6](https://github.com/l-you/about-me/compare/v1.0.5...v1.0.6) (2025-12-30)
+
+
+### Bug Fixes
+
+* extract build action to run it separately if registry push fails ([f43c37b](https://github.com/l-you/about-me/commit/f43c37b8718cb9f18e7ff6966dfb25b6ee8cadf4))
+* incorrect syntax ([74bb1a9](https://github.com/l-you/about-me/commit/74bb1a9513118cf20e7037bbc1e2359eca87ca17))
+* suddenly removed permissions ([d9c3522](https://github.com/l-you/about-me/commit/d9c352298f66c4cce1910d0170e0551f5ff9c475))
+* wrong docker registry tags ([2ce1152](https://github.com/l-you/about-me/commit/2ce11521d5448a3f53eebd2825583ee58bf88b5b))
+* wrong syntax ([3a748f4](https://github.com/l-you/about-me/commit/3a748f47d29a205c7467124cbce1acbf9162ea77))
+
 ## [1.0.5](https://github.com/l-you/about-me/compare/v1.0.4...v1.0.5) (2025-12-30)
 
 
