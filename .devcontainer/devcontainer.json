@@ -1,0 +1,9 @@
+{
+  "name": "Bun",
+  "image": "oven/bun:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": ["oven.bun-vscode"]
+    }
+  }
+}
