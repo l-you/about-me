@@ -3,31 +3,8 @@ import {Badge} from '@/components/ui/badge'
 import Image from 'next/image'
 import type {FunctionComponent, ReactNode} from 'react'
 
-type TechIconName =
-	| 'typescript'
-	| 'javascript'
-	| 'go'
-	| 'php'
-	| 'rust'
-	| 'bash'
-	| 'react'
-	| 'nextjs'
-	| 'tailwindcss'
-	| 'html5'
-	| 'css3'
-	| 'sass'
-	| 'nodejs'
-	| 'symfony'
-	| 'graphql'
-	| 'payloadcms'
-	| 'postgresql'
-	| 'mysql'
-	| 'redis'
-	| 'mongodb'
-	| 'docker'
-	| 'nginx'
 
-const iconMap: Record<TechIconName, string> = {
+const iconMap: Record<string, string> = {
 	typescript: '/icons/typescript.svg',
 	javascript: '/icons/javascript.svg',
 	go: '/icons/go.svg',
@@ -50,7 +27,8 @@ const iconMap: Record<TechIconName, string> = {
 	mongodb: '/icons/mongodb.svg',
 	docker: '/icons/docker.svg',
 	nginx: '/icons/nginx.svg',
-}
+} as const
+type TechIconName = keyof typeof iconMap
 
 const isTechIconName = (name: string): name is TechIconName => {
 	return name in iconMap
