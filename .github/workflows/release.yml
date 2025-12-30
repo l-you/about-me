@@ -1,0 +1,27 @@
+name: Create and publish a Docker image
+on:
+  release:
+    types: [published]
+jobs:
+  build-and-push-image:
+    runs-on: ubuntu-latest
+    # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Build and push Docker image
+        id: push
+        uses: revotale/docker-multi-arch-release-action@v1.0.3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          image-name: ${{ github.repository }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          platforms: linux/amd64,linux/arm64
+      
+      
