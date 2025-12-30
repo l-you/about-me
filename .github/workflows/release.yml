@@ -3,31 +3,36 @@ name: Semver Release
 on:
   push:
     branches:
-      release-please:
-        runs-on: ubuntu-latest
-        outputs:
-          release_created: ${{ steps.release.outputs.release_created }}
-          tag_name: ${{ steps.release.outputs.tag_name }}
-        steps:
-          - uses: googleapis/release-please-action@v4
-            id: release
-            with:
-              release-type: node
+      - main
 
-      build-and-push-docker:
-        runs-on: ubuntu-latest
-        needs: release-please
-        if: needs.release-please.outputs.release_created == 'true'
-        steps:
-          - name: Checkout repository
-            uses: actions/checkout@v6
-          - name: Build and push Docker image
-            id: push
-            uses: revotale/docker-multi-arch-release-action@v1.0.3
-            with:
-              registry: ghcr.io
-              username: ${{ github.actor }}
-              image-name: ${{ github.repository }}
-              password: ${{ secrets.GITHUB_TOKEN }}
-              platforms: linux/amd64,linux/arm64
+release-please:
+  runs-on: ubuntu-latest
+  outputs:
+    release_created: ${{ steps.release.outputs.release_created }}
+    tag_name: ${{ steps.release.outputs.tag_name }}
+  steps:
+    - uses: googleapis/release-please-action@v4
+      id: release
+      with:
+        release-type: node
+
+build-and-push-docker:
+  runs-on: ubuntu-latest
+  needs: release-please
+  if: needs.release-please.outputs.release_created == 'true'
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+    - name: Build and push Docker image
+      id: push
+      uses: revotale/docker-multi-arch-release-action@v1.0.4
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        image-name: ${{ github.repository }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        tags: |
+          ghcr.io/${{ github.repository }}:${{ needs.release-please.outputs.tag_name }}
+          ghcr.io/${{ github.repository }}:latest
+        platforms: linux/amd64,linux/arm64
 
