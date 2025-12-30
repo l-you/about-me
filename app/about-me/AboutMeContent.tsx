@@ -4,6 +4,7 @@ import {Badge} from '@/components/ui/badge'
 import {Button} from '@/components/ui/button'
 import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card'
 import {Separator} from '@/components/ui/separator'
+import contentConfig from '@/config/content.json'
 import {
 	ArrowRight,
 	BookOpen,
@@ -167,25 +168,25 @@ const AboutMeContent: FunctionComponent = () => {
 						<TechCategory
 							icon={<Code2 className="size-5" />}
 							title="Programming Languages"
-							techs={programmingLanguages}
+							techs={contentConfig.technologies.programmingLanguages}
 						/>
 						<Separator className="my-6" />
 						<TechCategory
 							icon={<Terminal className="size-5" />}
 							title="Frontend Development"
-							techs={frontendTechs}
+							techs={contentConfig.technologies.frontend}
 						/>
 						<Separator className="my-6" />
 						<TechCategory
 							icon={<Server className="size-5" />}
 							title="Backend Development"
-							techs={backendTechs}
+							techs={contentConfig.technologies.backend}
 						/>
 						<Separator className="my-6" />
 						<TechCategory
 							icon={<Database className="size-5" />}
 							title="Databases & Infrastructure"
-							techs={infraTechs}
+							techs={contentConfig.technologies.infrastructure}
 						/>
 					</div>
 				</div>
@@ -203,33 +204,17 @@ const AboutMeContent: FunctionComponent = () => {
 						</p>
 
 						<div className="grid gap-6 md:grid-cols-2">
-							<ProjectCard
-								title="next-scroll-restorer"
-								description="Scroll restoration for Next.js apps built with app directory. Fixed bugs that Next.js team do not fix."
-								stars={107}
-								language="TypeScript"
-								href="https://github.com/RevoTale/next-scroll-restorer"
-							/>
-							<ProjectCard
-								title="obsidian-folder-by-tags"
-								description="Automatically group Obsidian notes into folders by tags specified in the note."
-								stars={12}
-								language="TypeScript"
-								href="https://github.com/RevoTale/obsidian-folder-by-tags-distributor"
-							/>
-							<ProjectCard
-								title="react-grecaptcha-v3"
-								description="Performance-friendly integration of Google reCAPTCHA v3 into React. Keep your PageSpeed Insights high."
-								stars={3}
-								language="TypeScript"
-								href="https://github.com/RevoTale/react-grecaptcha-v3"
-							/>
-							<ProjectCard
-								title="Sea Battle Game"
-								description="Browser Battleship with shareable link to play with others. Backend: Go; Frontend: Next.js."
-								icon={<Gamepad2 className="size-4" />}
-								href="https://revotale.com/sea-battle-game"
-							/>
+							{contentConfig.featuredProjects.map((project) => (
+								<ProjectCard
+									key={project.title}
+									title={project.title}
+									description={project.description}
+									stars={project.stars}
+									language={project.language}
+									icon={project.icon === 'gamepad' ? <Gamepad2 className="size-4" /> : undefined}
+									href={project.href}
+								/>
+							))}
 						</div>
 
 						<div className="mt-8 text-center">
@@ -270,41 +255,5 @@ const AboutCard: FunctionComponent<{
 		</CardContent>
 	</Card>
 )
-
-// Tech Stack Data
-const programmingLanguages = [
-	{name: 'TypeScript', icon: 'typescript'},
-	{name: 'JavaScript', icon: 'javascript'},
-	{name: 'Go', icon: 'go'},
-	{name: 'PHP', icon: 'php'},
-	{name: 'Rust', icon: 'rust'},
-	{name: 'Bash', icon: 'bash'},
-]
-
-const frontendTechs = [
-	{name: 'React', icon: 'react'},
-	{name: 'Next.js', icon: 'nextjs'},
-	{name: 'Tailwind CSS', icon: 'tailwindcss'},
-	{name: 'HTML5', icon: 'html5'},
-	{name: 'CSS3', icon: 'css3'},
-	{name: 'Sass', icon: 'sass'},
-]
-
-const backendTechs = [
-	{name: 'Node.js', icon: 'nodejs'},
-	{name: 'Symfony', icon: 'symfony'},
-	{name: 'GraphQL', icon: 'graphql'},
-	{name: 'Payload CMS', icon: 'payloadcms'},
-	{name: 'Gin', icon: 'go'},
-]
-
-const infraTechs = [
-	{name: 'PostgreSQL', icon: 'postgresql'},
-	{name: 'MySQL', icon: 'mysql'},
-	{name: 'Redis', icon: 'redis'},
-	{name: 'MongoDB', icon: 'mongodb'},
-	{name: 'Docker', icon: 'docker'},
-	{name: 'Nginx', icon: 'nginx'},
-]
 
 export default AboutMeContent

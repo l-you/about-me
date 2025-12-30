@@ -1,0 +1,64 @@
+{
+  "featuredProjects": [
+    {
+      "title": "next-scroll-restorer",
+      "description": "Scroll restoration for Next.js apps built with app directory. Fixed bugs that Next.js team do not fix.",
+      "stars": 107,
+      "language": "TypeScript",
+      "href": "https://github.com/RevoTale/next-scroll-restorer"
+    },
+    {
+      "title": "obsidian-folder-by-tags",
+      "description": "Automatically group Obsidian notes into folders by tags specified in the note.",
+      "stars": 12,
+      "language": "TypeScript",
+      "href": "https://github.com/RevoTale/obsidian-folder-by-tags-distributor"
+    },
+    {
+      "title": "react-grecaptcha-v3",
+      "description": "Performance-friendly integration of Google reCAPTCHA v3 into React. Keep your PageSpeed Insights high.",
+      "stars": 3,
+      "language": "TypeScript",
+      "href": "https://github.com/RevoTale/react-grecaptcha-v3"
+    },
+    {
+      "title": "Sea Battle Game",
+      "description": "Browser Battleship with shareable link to play with others. Backend: Go; Frontend: Next.js.",
+      "icon": "gamepad",
+      "href": "https://revotale.com/sea-battle-game"
+    }
+  ],
+  "technologies": {
+    "programmingLanguages": [
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "Go", "icon": "go" },
+      { "name": "PHP", "icon": "php" },
+      { "name": "Rust", "icon": "rust" },
+      { "name": "Bash", "icon": "bash" }
+    ],
+    "frontend": [
+      { "name": "React", "icon": "react" },
+      { "name": "Next.js", "icon": "nextjs" },
+      { "name": "Tailwind CSS", "icon": "tailwindcss" },
+      { "name": "HTML5", "icon": "html5" },
+      { "name": "CSS3", "icon": "css3" },
+      { "name": "Sass", "icon": "sass" }
+    ],
+    "backend": [
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "Symfony", "icon": "symfony" },
+      { "name": "GraphQL", "icon": "graphql" },
+      { "name": "Payload CMS", "icon": "payloadcms" },
+      { "name": "Gin", "icon": "go" }
+    ],
+    "infrastructure": [
+      { "name": "PostgreSQL", "icon": "postgresql" },
+      { "name": "MySQL", "icon": "mysql" },
+      { "name": "Redis", "icon": "redis" },
+      { "name": "MongoDB", "icon": "mongodb" },
+      { "name": "Docker", "icon": "docker" },
+      { "name": "Nginx", "icon": "nginx" }
+    ]
+  }
+}
