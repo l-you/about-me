@@ -239,7 +239,7 @@ const AboutCard: FunctionComponent<{
 	description: string
 }> = ({icon, title, description}) => (
 	<Card className="group transition-all hover:shadow-md">
-		<CardHeader className="pb-3">
+		<CardHeader className="">
 			<div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
 				{icon}
 			</div>
