@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import type { FunctionComponent } from 'react'
-import AboutMeContent from './about-me/AboutMeContent'
+import AboutMeContent from '@/src/about-me/AboutMeContent'
 
 export const metadata: Metadata = {
 	title: 'About Me | l-you - Full-Stack Developer',
