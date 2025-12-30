@@ -8,25 +8,26 @@
       "href": "https://github.com/RevoTale/next-scroll-restorer"
     },
     {
+        "title":"RevoTale",
+        "description":"Website where I deploy some of my projects and write blog notes.",
+        "icon":"revotale",
+        "href":"https://revotale.com"
+    },
+ 
+  
+    {
       "title": "obsidian-folder-by-tags",
       "description": "Automatically group Obsidian notes into folders by tags specified in the note.",
       "stars": 12,
       "language": "TypeScript",
       "href": "https://github.com/RevoTale/obsidian-folder-by-tags-distributor"
     },
-    {
-      "title": "react-grecaptcha-v3",
-      "description": "Performance-friendly integration of Google reCAPTCHA v3 into React. Keep your PageSpeed Insights high.",
-      "stars": 3,
-      "language": "TypeScript",
-      "href": "https://github.com/RevoTale/react-grecaptcha-v3"
-    },
-    {
+       {
       "title": "Sea Battle Game",
       "description": "Browser Battleship with shareable link to play with others. Backend: Go; Frontend: Next.js.",
       "icon": "gamepad",
       "href": "https://revotale.com/sea-battle-game"
-    }
+      }
   ],
   "technologies": {
     "programmingLanguages": [

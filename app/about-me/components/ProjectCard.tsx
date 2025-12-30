@@ -42,7 +42,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({
 						<ExternalLink className="size-4" />
 					</Link>
 				</div>
-				<CardDescription className="line-clamp-2">
+				<CardDescription >
 					{description}
 				</CardDescription>
 			</CardHeader>

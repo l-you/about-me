@@ -1,11 +1,10 @@
-'use client'
-
 import {Badge} from '@/components/ui/badge'
 import {Button} from '@/components/ui/button'
 import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card'
 import {Separator} from '@/components/ui/separator'
 import contentConfig from '@/config/content.json'
 import {
+	ArrowLeft,
 	ArrowRight,
 	BookOpen,
 	Code2,
@@ -25,6 +24,7 @@ import type {FunctionComponent} from 'react'
 import {ContactSection} from './components/ContactSection'
 import {GitHubIcon, TechCategory} from './components/Icons'
 import {ProjectCard} from './components/ProjectCard'
+import Image from 'next/image'
 
 const AboutMeContent: FunctionComponent = () => {
 	return (
@@ -195,7 +195,7 @@ const AboutMeContent: FunctionComponent = () => {
 							Featured Projects
 						</h2>
 						<p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-							Open-source libraries and tools I&apos;ve built
+							Personal projects, open-source libraries and tools I&apos;m building
 						</p>
 
 						<div className="grid gap-6 md:grid-cols-2">
@@ -206,22 +206,38 @@ const AboutMeContent: FunctionComponent = () => {
 									description={project.description}
 									stars={project.stars}
 									language={project.language}
-									icon={project.icon === 'gamepad' ? <Gamepad2 className="size-4" /> : undefined}
+									icon={project.icon === 'gamepad' ? <Gamepad2 className="size-5" /> : project.icon === 'revotale'? <Image src="/icons/revotale.svg" alt="Revotale Logo" width={16} height={16} className="size-5"/> : null}
 									href={project.href}
 								/>
 							))}
 						</div>
 
-						<div className="mt-8 text-center">
-							<Button asChild variant="outline" className="gap-2">
+						<div className="mt-8 text-center flex flex-col gap-2 max-w-full ">
+							<p className="mx-auto max-w-2xl text-center text-muted-foreground text-base my-1">
+								View open-sourced code on GitHub
+							</p>
+							<div className='flex gap-4 items-center justify-center flex-wrap'>
+								<Button asChild variant="secondary" className="gap-2" >
 								<Link
 									href="https://github.com/RevoTale"
 									target="_blank"
 									rel="noopener noreferrer">
-									View All Projects
-									<ArrowRight className="size-4" />
+										<ArrowLeft className="size-3" />
+									l-you&apos;s profile
+					
 								</Link>
 							</Button>
+							<Button asChild variant="secondary" className="gap-2">
+								<Link
+									href="https://github.com/RevoTale"
+									target="_blank"
+									rel="noopener noreferrer">
+									RevoTale org
+									<ArrowRight className="size-3" />
+									
+								</Link>
+							</Button>
+							</div>
 						</div>
 					</div>
 				</div>
