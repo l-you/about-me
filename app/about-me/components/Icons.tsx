@@ -1,5 +1,6 @@
 import {cn} from '@/lib/utils'
 import {Badge} from '@/components/ui/badge'
+import Image from 'next/image'
 import type {FunctionComponent, ReactNode} from 'react'
 
 type TechIconName =
@@ -27,36 +28,28 @@ type TechIconName =
 	| 'nginx'
 
 const iconMap: Record<TechIconName, string> = {
-	typescript:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-	javascript:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-	go: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg',
-	php: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
-	rust: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg',
-	bash: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg',
-	react: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-	nextjs: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
-	tailwindcss:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-	html5: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-	css3: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-	sass: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
-	nodejs: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-	symfony:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg',
-	graphql:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg',
-	payloadcms:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-	postgresql:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-	mysql: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
-	redis: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
-	mongodb:
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
-	docker: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
-	nginx: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg',
+	typescript: '/icons/typescript.svg',
+	javascript: '/icons/javascript.svg',
+	go: '/icons/go.svg',
+	php: '/icons/php.svg',
+	rust: '/icons/rust.svg',
+	bash: '/icons/bash.svg',
+	react: '/icons/react.svg',
+	nextjs: '/icons/nextjs.svg',
+	tailwindcss: '/icons/tailwindcss.svg',
+	html5: '/icons/html5.svg',
+	css3: '/icons/css3.svg',
+	sass: '/icons/sass.svg',
+	nodejs: '/icons/nodejs.svg',
+	symfony: '/icons/symfony.svg',
+	graphql: '/icons/graphql.svg',
+	payloadcms: '/icons/nodejs.svg',
+	postgresql: '/icons/postgresql.svg',
+	mysql: '/icons/mysql.svg',
+	redis: '/icons/redis.svg',
+	mongodb: '/icons/mongodb.svg',
+	docker: '/icons/docker.svg',
+	nginx: '/icons/nginx.svg',
 }
 
 const isTechIconName = (name: string): name is TechIconName => {
@@ -79,12 +72,12 @@ export const TechIcon: FunctionComponent<TechIconProps> = ({
 	const iconUrl = iconMap[name]
 
 	return (
-		// eslint-disable-next-line @next/next/no-img-element -- External CDN icons don't benefit from Next.js Image optimization
-		<img
+		<Image
 			src={iconUrl}
 			alt={`${name} icon`}
+			width={16}
+			height={16}
 			className={className}
-			loading="lazy"
 		/>
 	)
 }
