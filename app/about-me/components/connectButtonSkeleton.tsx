@@ -10,6 +10,6 @@ const ConntectButtonContent:FunctionComponent<{isExpanded: boolean}> = ({isExpan
     return <><ChevronDown
 										className={`size-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
 									/>
-									More ways to connect;</>
+									More ways to connect</>
 }
 export {ConntectButtonContent}
