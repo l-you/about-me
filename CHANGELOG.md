@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/l-you/about-me/compare/v1.0.3...v1.0.4) (2025-12-30)
+
+
+### Bug Fixes
+
+* miniserver not found after deployment ([37e9014](https://github.com/l-you/about-me/commit/37e90149a97b831e9f694a5cb621c30bddb0b121))
+
 ## [1.0.3](https://github.com/l-you/about-me/compare/v1.0.2...v1.0.3) (2025-12-30)
 
 
