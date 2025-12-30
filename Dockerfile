@@ -10,10 +10,10 @@ COPY . .
 RUN bun run build
 
 # Production stage - miniserve
-FROM docker.io/svenstaro/miniserve:latest
+FROM docker.io/svenstaro/miniserve:alpine
 
 COPY --from=builder /app/out /data
 
 EXPOSE 3000
 
-ENTRYPOINT ["miniserve", "/data", "--port", "3000", "--index", "index.html"]
+ENTRYPOINT ["/app/miniserve", "/data", "--port", "3000", "--index", "index.html"]
