@@ -125,7 +125,7 @@ export const ContactSection: FunctionComponent = () => {
 							&quot;Made with passion ❤️‍🔥&quot;
 						</p>
 						<p className="mt-2 text-sm text-muted-foreground">
-							RevoTale · Elegant solutions for challenging tasks
+							Elegant solutions for challenging tasks
 						</p>
 					</div>
 				</div>

@@ -67,7 +67,7 @@ const AboutMeContent: FunctionComponent = () => {
 								variant="outline"
 								className="gap-1.5 px-3 py-1">
 								<MapPin className="size-3.5" />
-								127.0.0.1
+								Web
 							</Badge>
 							<Badge
 								variant="outline"
