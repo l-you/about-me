@@ -1,21 +1,30 @@
-name: Create and publish a Docker image
+name: Semver Release
+
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
-  build-and-push-image:
+  release-please:
     runs-on: ubuntu-latest
-    # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
-    permissions:
-      contents: read
-      packages: write
-      attestations: write
-      id-token: write
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
     steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+
+          release-type: node
       - name: Checkout repository
         uses: actions/checkout@v6
       - name: Build and push Docker image
+        if: ${{ steps.release.outputs.release_created }}
         id: push
         uses: revotale/docker-multi-arch-release-action@v1.0.3
         with:
@@ -24,5 +33,3 @@ jobs:
           image-name: ${{ github.repository }}
           password: ${{ secrets.GITHUB_TOKEN }}
           platforms: linux/amd64,linux/arm64
-      
-      
