@@ -1,6 +1,4 @@
-'use client'
 
-import {Button} from '@/components/ui/button'
 import {
 	Card,
 	CardContent,
@@ -8,18 +6,14 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card'
-import {Separator} from '@/components/ui/separator'
-import {BookOpen, ChevronDown, ExternalLink, Mail} from 'lucide-react'
-import Link from 'next/link'
-import {type FunctionComponent, useState} from 'react'
-import {GitHubIcon, NpmIcon, PackagistIcon, RedditIcon, XIcon} from './Icons'
+import {Mail} from 'lucide-react'
+import {type FunctionComponent} from 'react'
+import {GitHubIcon, RedditIcon, XIcon} from './Icons'
+import MoreContactsSection from './MoreContactsSection'
+import ContactButton from './ContextButton'
 
 export const ContactSection: FunctionComponent = () => {
-	const [isExpanded, setIsExpanded] = useState(false)
 
-	const handleToggle = (): void => {
-		setIsExpanded(!isExpanded)
-	}
 
 	return (
 		<section id="contact" className="py-12 md:py-16">
@@ -65,57 +59,7 @@ export const ContactSection: FunctionComponent = () => {
 							</div>
 
 							{/* Expandable section */}
-							<div className="mt-6">
-								<Button
-									variant="ghost"
-									className="w-full gap-2"
-									onClick={handleToggle}>
-									<ChevronDown
-										className={`size-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
-									/>
-									More ways to connect
-								</Button>
-
-								{isExpanded && (
-									<div className="mt-6 space-y-4 animate-in fade-in slide-in-from-top-2">
-										<Separator />
-										<div className="grid gap-4 sm:grid-cols-2">
-											<ContactButton
-												href="https://revotale.com"
-												icon={
-													<ExternalLink className="size-5" />
-												}
-												title="Website"
-												subtitle="revotale.com"
-												variant="ghost"
-											/>
-											<ContactButton
-												href="https://revotale.com/blog"
-												icon={
-													<BookOpen className="size-5" />
-												}
-												title="Blog"
-												subtitle="Tech notes & insights"
-												variant="ghost"
-											/>
-											<ContactButton
-												href="https://www.npmjs.com/~grisaia"
-												icon={<NpmIcon />}
-												title="npm"
-												subtitle="~grisaia"
-												variant="ghost"
-											/>
-											<ContactButton
-												href="https://packagist.org/users/grisaia/"
-												icon={<PackagistIcon />}
-												title="Packagist"
-												subtitle="grisaia"
-												variant="ghost"
-											/>
-										</div>
-									</div>
-								)}
-							</div>
+							<MoreContactsSection />
 						</CardContent>
 					</Card>
 
@@ -134,36 +78,3 @@ export const ContactSection: FunctionComponent = () => {
 	)
 }
 
-interface ContactButtonProps {
-	href: string
-	icon: React.ReactNode
-	title: string
-	subtitle: string
-	variant?: 'outline' | 'ghost'
-}
-
-const ContactButton: FunctionComponent<ContactButtonProps> = ({
-	href,
-	icon,
-	title,
-	subtitle,
-	variant = 'outline',
-}) => {
-	return (
-		<Button
-			asChild
-			variant={variant}
-			className="h-auto justify-start gap-3 p-4">
-			<Link href={href} target="_blank" rel="noopener noreferrer">
-				{icon}
-				<div className="text-left">
-					<div className="font-medium">{title}</div>
-					<div className="text-xs text-muted-foreground">
-						{subtitle}
-					</div>
-				</div>
-				<ExternalLink className="ml-auto size-4 text-muted-foreground" />
-			</Link>
-		</Button>
-	)
-}
