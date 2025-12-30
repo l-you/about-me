@@ -122,34 +122,29 @@ const AboutMeContent: FunctionComponent = () => {
 								title="UI/UX Focus"
 								description="Crafting simple, eye-friendly UI and delivering a smooth UX. Every pixel matters. ❤️"
 							/>
+						
 							<AboutCard
 								icon={<Rocket className="size-5" />}
 								title="Innovation Driven"
-								description="Hardened by dealing with tons of legacy code, I have an unbridled desire for innovation and improvement. 🚀"
+								description="I have an desire for innovation and improvement replacing outdated code with cutting-edge technologies 🚀"
+							/>
+							<AboutCard
+								icon={<Zap className="size-5" />}
+								title="Codebase Rescuer"
+								description="Hardened by dealing with tons of legacy code. Solving problems nobody want to solve. ⚡"
+							/>
+							<AboutCard
+								icon={<Rocket className="size-5" />}
+								title="Details Matter"
+								description="I enjoy paying attention to small details which, as practice shows, increase the conversion rate so good."
+							/>
+							<AboutCard
+								icon={<BookOpen className="size-5" />}
+								title="Lifestyle and software"
+								description="I believe that learning a variety of information and skills in life creates conditions for our brain to produce better software."
 							/>
 						</div>
 
-						<Card className="mt-8">
-							<CardContent className="pt-6">
-								<div className="flex items-start gap-4">
-									<div className="rounded-lg bg-accent/50 p-3">
-										<BookOpen className="size-6 text-primary" />
-									</div>
-									<div>
-										<h3 className="mb-2 font-semibold">
-											Continuous Learner
-										</h3>
-										<p className="text-muted-foreground">
-											I love updating existing code with
-											cutting-edge technologies. Learning
-											as much information as possible
-											about this world helps making better
-											the ins and outs of the project. 📚
-										</p>
-									</div>
-								</div>
-							</CardContent>
-						</Card>
 					</div>
 				</div>
 			</section>
