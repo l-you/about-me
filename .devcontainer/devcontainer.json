@@ -1,9 +1,22 @@
 {
   "name": "Bun",
   "image": "oven/bun:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
   "customizations": {
     "vscode": {
-      "extensions": ["oven.bun-vscode"]
+      "extensions": [
+        "oven.bun-vscode",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
     }
-  }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "bun install",
+  "remoteUser": "bun"
 }
