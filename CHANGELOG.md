@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/l-you/about-me/compare/v1.0.4...v1.0.5) (2025-12-30)
+
+
+### Bug Fixes
+
+* Commit tiny change to trigger release again ([065de32](https://github.com/l-you/about-me/commit/065de326aaf42313b3cd9b5ccf3e20779d126cbc))
+
 ## [1.0.4](https://github.com/l-you/about-me/compare/v1.0.3...v1.0.4) (2025-12-30)
 
 
