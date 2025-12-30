@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/l-you/about-me/compare/v1.0.2...v1.0.3) (2025-12-30)
+
+
+### Bug Fixes
+
+* denied: installation not allowed to Create organization package ([ca355df](https://github.com/l-you/about-me/commit/ca355dfa7b9a969cdba1887debb168f4a14f811e))
+
 ## [1.0.2](https://github.com/l-you/about-me/compare/v1.0.1...v1.0.2) (2025-12-30)
 
 
