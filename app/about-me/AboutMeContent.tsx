@@ -32,7 +32,7 @@ const AboutMeContent: FunctionComponent = () => {
 			{/* Hero Section */}
 			<section className="relative overflow-hidden">
 				<div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
-				<div className="container relative mx-auto px-4 py-16 md:py-24">
+				<div className="container relative mx-auto px-4 py-12 md:py-16">
 					<div className="mx-auto max-w-4xl text-center">
 						<div className="mb-6 flex justify-center">
 							<div className="relative">
@@ -104,7 +104,7 @@ const AboutMeContent: FunctionComponent = () => {
 			</section>
 
 			{/* About Section */}
-			<section className="border-t bg-muted/30 py-16 md:py-20">
+			<section className="border-t bg-muted/30 py-12 md:py-16">
 				<div className="container mx-auto px-4">
 					<div className="mx-auto max-w-4xl">
 						<h2 className="mb-12 text-center text-3xl font-bold">
@@ -150,7 +150,7 @@ const AboutMeContent: FunctionComponent = () => {
 			</section>
 
 			{/* Tech Stack Section */}
-			<section className="py-16 md:py-20">
+			<section className="py-12 md:py-16">
 				<div className="container mx-auto px-4">
 					<div className="mx-auto max-w-5xl">
 						<h2 className="mb-4 text-center text-3xl font-bold">
@@ -188,7 +188,7 @@ const AboutMeContent: FunctionComponent = () => {
 			</section>
 
 			{/* Featured Projects */}
-			<section className="border-t bg-muted/30 py-16 md:py-20">
+			<section className="border-t bg-muted/30 py-12 md:py-16">
 				<div className="container mx-auto px-4">
 					<div className="mx-auto max-w-5xl">
 						<h2 className="mb-4 text-center text-3xl font-bold">
