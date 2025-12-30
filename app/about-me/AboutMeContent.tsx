@@ -48,12 +48,12 @@ const AboutMeContent: FunctionComponent = () => {
 						</h1>
 
 						<p className="mx-auto mb-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-							A passionate{' '}
+							A {' '}
 							<span className="font-semibold text-foreground">
 								Full-Stack Developer
 							</span>{' '}
-							who has been increasing business revenue since 2018.
-							💸
+							generating revenue since 2018.💸 <br/>
+							Hardened by tons of legacy code.
 						</p>
 
 						<div className="mb-8 flex flex-wrap justify-center gap-2">
@@ -73,7 +73,7 @@ const AboutMeContent: FunctionComponent = () => {
 								variant="outline"
 								className="gap-1.5 px-3 py-1">
 								<Rocket className="size-3.5" />
-								3,800+ Contributions/Year
+								Senior Engineer
 							</Badge>
 						</div>
 
