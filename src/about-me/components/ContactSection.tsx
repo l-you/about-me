@@ -40,10 +40,10 @@ export const ContactSection: FunctionComponent = () => {
 									subtitle="@l-you"
 								/>
 								<ContactButton
-									href="mailto:contact@revotale.com"
+									href="mailto:l-you@revotale.com"
 									icon={<Mail className="size-5" />}
 									title="Email"
-									subtitle="contact@revotale.com"
+									subtitle="l-you@revotale.com"
 								/>
 								<ContactButton
 									href="https://x.com/x_l_you"
