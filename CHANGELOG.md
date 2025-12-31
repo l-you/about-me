@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/l-you/about-me/compare/v1.0.6...v1.0.7) (2025-12-31)
+
+
+### Bug Fixes
+
+* too much release tags ([e2beb7f](https://github.com/l-you/about-me/commit/e2beb7f0b41a1b67f96426c3163dfd9c41e75eba))
+
 ## [1.0.6](https://github.com/l-you/about-me/compare/v1.0.5...v1.0.6) (2025-12-30)
 
 
