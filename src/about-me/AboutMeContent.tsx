@@ -4,6 +4,7 @@ import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card'
 import {Separator} from '@/components/ui/separator'
 import contentConfig from '@/config/content.json'
 import {
+	ArrowDown,
 	ArrowLeft,
 	ArrowRight,
 	BookOpen,
@@ -34,11 +35,24 @@ const AboutMeContent: FunctionComponent = () => {
 				<div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
 				<div className="container relative mx-auto px-4 py-12 md:py-16">
 					<div className="mx-auto max-w-4xl text-center">
-						<div className="mb-6 flex justify-center">
+						<div className="mb-20 flex justify-center overflow-visible">
 							<div className="relative">
 								<div className="absolute -inset-1 rounded-full bg-linear-to-r from-primary/20 to-accent/20 blur-md" />
-								<div className="relative flex h-32 w-32 items-center justify-center rounded-full border-2 border-border bg-card text-4xl font-bold shadow-lg">
-									👋
+								<div className="relative flex h-32 w-32 items-center justify-center rounded-full border-2 border-border bg-card overflow-hidden shadow-lg">
+									<Image
+										src="https://2.gravatar.com/avatar/eb7387f4ea2542d6d90e970a9180ea931ece91bf0e826ba175e46d6fc7ccb585?size=256"
+										alt="l-you avatar"
+										width={128}
+										height={128}
+										className="h-full w-full object-cover"
+									/>
+								</div>
+								
+								<div className="absolute h-min flex items-center -left-12 md:left-auto -bottom-14 md:-right-40 md:top-6 gap-2 md:flex-row flex-col">
+									<ArrowDown className="size-5 text-muted-foreground animate-bounce md:-rotate-110 rotate-25" />
+									<p className="text-xs text-muted-foreground italic max-w-30 text-left">
+										Yes, that&apos;s the real photo of myself <span className='not-italic'>:)</span>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -53,7 +67,7 @@ const AboutMeContent: FunctionComponent = () => {
 							<span className="font-semibold text-foreground">
 								Full-Stack Developer
 							</span>{' '}
-							generating revenue since 2018.💸 <br/>
+							generating revenue since 2018.<br/>
 							Hardened by tons of legacy code.
 						</p>
 
