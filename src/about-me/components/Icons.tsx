@@ -14,9 +14,6 @@ const iconMap: Record<string, string> = {
 	react: '/icons/react.svg',
 	nextjs: '/icons/nextjs.svg',
 	tailwindcss: '/icons/tailwindcss.svg',
-	html5: '/icons/html5.svg',
-	css3: '/icons/css3.svg',
-	sass: '/icons/sass.svg',
 	nodejs: '/icons/nodejs.svg',
 	symfony: '/icons/symfony.svg',
 	graphql: '/icons/graphql.svg',
@@ -24,7 +21,6 @@ const iconMap: Record<string, string> = {
 	postgresql: '/icons/postgresql.svg',
 	mysql: '/icons/mysql.svg',
 	redis: '/icons/redis.svg',
-	mongodb: '/icons/mongodb.svg',
 	docker: '/icons/docker.svg',
 	nginx: '/icons/nginx.svg',
 } as const

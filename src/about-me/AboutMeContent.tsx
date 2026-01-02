@@ -171,7 +171,7 @@ const AboutMeContent: FunctionComponent = () => {
 							Technologies & Tools
 						</h2>
 						<p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-							Extensive experience with modern development stack
+							Core technologies I prefer and use
 						</p>
 
 						<TechCategory

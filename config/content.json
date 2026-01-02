@@ -41,23 +41,18 @@
     "frontend": [
       { "name": "React", "icon": "react" },
       { "name": "Next.js", "icon": "nextjs" },
-      { "name": "Tailwind CSS", "icon": "tailwindcss" },
-      { "name": "HTML5", "icon": "html5" },
-      { "name": "CSS3", "icon": "css3" },
-      { "name": "Sass", "icon": "sass" }
+      { "name": "Tailwind CSS", "icon": "tailwindcss" }
     ],
     "backend": [
       { "name": "Node.js", "icon": "nodejs" },
       { "name": "Symfony", "icon": "symfony" },
       { "name": "GraphQL", "icon": "graphql" },
-      { "name": "Payload CMS", "icon": "payloadcms" },
-      { "name": "Gin", "icon": "go" }
+      { "name": "Payload CMS", "icon": "payloadcms" }
     ],
     "infrastructure": [
       { "name": "PostgreSQL", "icon": "postgresql" },
       { "name": "MySQL", "icon": "mysql" },
       { "name": "Redis", "icon": "redis" },
-      { "name": "MongoDB", "icon": "mongodb" },
       { "name": "Docker", "icon": "docker" },
       { "name": "Nginx", "icon": "nginx" }
     ]
