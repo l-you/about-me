@@ -49,7 +49,7 @@ const AboutMeContent: FunctionComponent = () => {
 								</div>
 								
 								<div className="absolute h-min flex items-center -left-12 md:left-auto -bottom-14 md:-right-40 md:top-6 gap-2 md:gap-3 md:items-end md:flex-row flex-col">
-									<ArrowDown className="size-5 text-muted-foreground animate-bounce md:rotate-70 rotate-205" />
+									<ArrowDown className="size-5 text-muted-foreground animate-bounce md:rotate-70 rotate-215" />
 									<p className="text-xs text-muted-foreground italic max-w-30 text-left">
 										Yes, that&apos;s the real photo of myself <span className='not-italic'>:)</span>
 									</p>
