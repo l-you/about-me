@@ -25,7 +25,6 @@
        {
       "title": "Sea Battle Game",
       "description": "Browser Battleship with shareable link to play with others. Backend: Go; Frontend: Next.js.",
-      "icon": "gamepad",
       "href": "https://revotale.com/sea-battle-game"
       }
   ],
@@ -47,7 +46,7 @@
       { "name": "Node.js", "icon": "nodejs" },
       { "name": "Symfony", "icon": "symfony" },
       { "name": "GraphQL", "icon": "graphql" },
-      { "name": "Payload CMS", "icon": "payloadcms" }
+      { "name": "Payload CMS", "icon": "nodejs" }
     ],
     "infrastructure": [
       { "name": "PostgreSQL", "icon": "postgresql" },

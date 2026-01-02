@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:icons": "bun run scripts/generate-icon-types.ts",
+    "validate:content": "bun run scripts/validate-content.ts",
+    "validate": "bun run generate:icons && bun run validate:content"
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.8",

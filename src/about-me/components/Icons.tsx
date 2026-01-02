@@ -2,33 +2,7 @@ import {cn} from '@/lib/utils'
 import {Badge} from '@/components/ui/badge'
 import Image from 'next/image'
 import type {FunctionComponent, ReactNode} from 'react'
-
-
-const iconMap: Record<string, string> = {
-	typescript: '/icons/typescript.svg',
-	javascript: '/icons/javascript.svg',
-	go: '/icons/go.svg',
-	php: '/icons/php.svg',
-	rust: '/icons/rust.svg',
-	bash: '/icons/bash.svg',
-	react: '/icons/react.svg',
-	nextjs: '/icons/nextjs.svg',
-	tailwindcss: '/icons/tailwindcss.svg',
-	nodejs: '/icons/nodejs.svg',
-	symfony: '/icons/symfony.svg',
-	graphql: '/icons/graphql.svg',
-	payloadcms: '/icons/nodejs.svg',
-	postgresql: '/icons/postgresql.svg',
-	mysql: '/icons/mysql.svg',
-	redis: '/icons/redis.svg',
-	docker: '/icons/docker.svg',
-	nginx: '/icons/nginx.svg',
-} as const
-type TechIconName = keyof typeof iconMap
-
-const isTechIconName = (name: string): name is TechIconName => {
-	return name in iconMap
-}
+import {iconMap, isValidIconName} from '@/src/types/icons'
 
 interface TechIconProps {
 	name: string
@@ -39,7 +13,7 @@ export const TechIcon: FunctionComponent<TechIconProps> = ({
 	name,
 	className = 'size-4',
 }) => {
-	if (!isTechIconName(name)) {
+	if (!isValidIconName(name)) {
 		return null
 	}
 
