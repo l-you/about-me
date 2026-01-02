@@ -236,8 +236,8 @@ const AboutMeContent: FunctionComponent = () => {
 									href="https://github.com/RevoTale"
 									target="_blank"
 									rel="noopener noreferrer">
-										<ArrowLeft className="size-3" />
-									l-you&apos;s profile
+										<GitHubIcon className='size-4'/><ArrowLeft className="size-3" /> 
+									my profile 
 					
 								</Link>
 							</Button>
@@ -246,9 +246,9 @@ const AboutMeContent: FunctionComponent = () => {
 									href="https://github.com/RevoTale"
 									target="_blank"
 									rel="noopener noreferrer">
-									RevoTale org
+									RevoTale 
 									<ArrowRight className="size-3" />
-									
+									<GitHubIcon className='size-4'/>
 								</Link>
 							</Button>
 							</div>
