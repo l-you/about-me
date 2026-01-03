@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "generate:icons": "bun run scripts/generate-icon-types.ts",
+    "generate:avatar": "bun run scripts/download-avatar.ts",
     "validate:content": "bun run scripts/validate-content.ts",
     "validate": "bun run generate:icons && bun run validate:content"
   },

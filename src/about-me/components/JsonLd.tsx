@@ -12,6 +12,7 @@ export function JsonLd() {
 		'@context': 'https://schema.org',
 		'@type': 'ProfilePage',
 		dateModified: new Date().toISOString(),
+		inLanguage: 'en',
 		mainEntity: {
 			'@type': 'Person',
 			'@id': `${site.domain}/#person`,
@@ -22,6 +23,10 @@ export function JsonLd() {
 			image: site.avatarUrl,
 			url: site.domain,
 			email: site.email,
+			workLocation: {
+				'@type': 'VirtualLocation',
+				name: 'Remote',
+			},
 			sameAs: [
 				`https://github.com/${site.social.github}`,
 				...(site.social.githubOrg ? [`https://github.com/${site.social.githubOrg}`] : []),
@@ -79,6 +84,13 @@ export function JsonLd() {
 				codeRepository: project.href,
 				programmingLanguage: project.language ?? 'TypeScript',
 				author: {'@id': `${site.domain}/#person`},
+				...(project.stars && {
+					interactionStatistic: {
+						'@type': 'InteractionCounter',
+						interactionType: 'https://schema.org/LikeAction',
+						userInteractionCount: project.stars,
+					},
+				}),
 			})),
 	}
 
