@@ -53,10 +53,10 @@
   ],
   "technologies": {
     "programmingLanguages": [
-      { "name": "TypeScript", "icon": "typescript" },
-      { "name": "JavaScript", "icon": "javascript" },
       { "name": "Go", "icon": "go" },
       { "name": "PHP", "icon": "php" },
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "JavaScript", "icon": "javascript" },
       { "name": "Rust", "icon": "rust" },
       { "name": "Bash", "icon": "bash" }
     ],
