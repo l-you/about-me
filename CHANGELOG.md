@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/l-you/about-me/compare/v1.2.0...v1.2.1) (2026-01-03)
+
+
+### Bug Fixes
+
+* adapt external icons for the light/dark theme ([230805b](https://github.com/l-you/about-me/commit/230805bde4dcff3d409d5ba809674458be750a0e))
+* increae image size for ebtter rendering ([e69f6f3](https://github.com/l-you/about-me/commit/e69f6f3ba76f3021a89f13d348dffa6f4d28710d))
+
 ## [1.2.0](https://github.com/l-you/about-me/compare/v1.1.1...v1.2.0) (2026-01-03)
 
 
