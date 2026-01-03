@@ -226,7 +226,7 @@ const AboutMeContent: FunctionComponent = () => {
 							))}
 						</div>
 
-						<div className="mt-8 text-center flex flex-col gap-2 max-w-full ">
+						<div className="mt-8 text-center flex flex-col gap-2 max-w-full	items-center">
 							<p className="mx-auto max-w-2xl text-center text-muted-foreground text-base my-1">
 								View open-sourced code on GitHub
 							</p>
@@ -252,6 +252,14 @@ const AboutMeContent: FunctionComponent = () => {
 								</Link>
 							</Button>
 							</div>
+								<Link
+							href="https://github.com/l-you/about-me"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground underline decoration-1 underline-offset-3 transition-all hover:text-primary hover:decoration-2">
+							<Code2 className="size-4" />
+							<span>source code of this web page is available</span>
+						</Link>
 						</div>
 					</div>
 				</div>
