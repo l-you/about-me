@@ -24,8 +24,8 @@ export const TechIcon: FC<TechIconProps> = ({
 			src={iconUrl} 
 			loading='lazy'
 			alt={`${name} icon`}
-			width={16}
-			height={16}
+			width={48}
+			height={48}
 			className={className}
 		/>
 	)
