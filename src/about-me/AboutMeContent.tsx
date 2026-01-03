@@ -252,14 +252,15 @@ const AboutMeContent: FunctionComponent = () => {
 								</Link>
 							</Button>
 							</div>
-								<Link
-							href="https://github.com/l-you/about-me"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground underline decoration-1 underline-offset-3 transition-all hover:text-primary hover:decoration-2">
-							<Code2 className="size-4" />
-							<span>source code of this web page is available</span>
-						</Link>
+								<p className="mt-6 text-sm text-muted-foreground">
+									<Link
+								href="https://github.com/l-you/about-me"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="underline decoration-1 underline-offset-2 transition-colors hover:text-foreground">
+								Explode the source code
+							</Link> of this web page
+								</p>
 						</div>
 					</div>
 				</div>
