@@ -22,6 +22,7 @@ export const AVAILABLE_ICONS = [
 	'go',
 	'postgresql',
 	'revotale',
+	'gamepad',
 ] as const
 
 export type IconName = typeof AVAILABLE_ICONS[number]
@@ -45,6 +46,7 @@ export const iconMap: Record<IconName, string> = {
 	go: '/icons/go.svg',
 	postgresql: '/icons/postgresql.svg',
 	revotale: '/icons/revotale.svg',
+	gamepad: '/icons/gamepad.svg',
 }
 
 export function isValidIconName(name: string): name is IconName {
