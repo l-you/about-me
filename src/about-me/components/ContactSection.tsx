@@ -17,12 +17,12 @@ export const ContactSection: FunctionComponent = () => {
 
 
 	return (
-		<section id="contact" className="py-12 md:py-16">
+		<section id="contact" aria-labelledby="contact-heading" className="py-12 md:py-16">
 			<div className="container mx-auto px-4">
 				<div className="mx-auto max-w-3xl">
 					<Card className="overflow-hidden pt-0 pb-5">
 						<CardHeader className="bg-linear-to-r from-primary/5 to-accent/5 py-6">
-							<CardTitle className="text-center text-2xl">
+							<CardTitle id="contact-heading" className="text-center text-2xl">
 								Let&apos;s Connect
 							</CardTitle>
 							<CardDescription className="text-center">

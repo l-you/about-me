@@ -29,9 +29,9 @@ import Image from 'next/image'
 
 const AboutMeContent = async () => {
 	return (
-		<div className="min-h-screen bg-background">
+		<main className="min-h-screen bg-background">
 			{/* Hero Section */}
-			<section className="relative overflow-hidden">
+			<section aria-labelledby="hero-heading" className="relative overflow-hidden">
 				<div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
 				<div className="container relative mx-auto px-4 py-12 md:py-16">
 					<div className="mx-auto max-w-4xl text-center">
@@ -57,7 +57,7 @@ const AboutMeContent = async () => {
 							</div>
 						</div>
 
-						<h1 className="mb-4 bg-linear-to-r from-foreground to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+						<h1 id="hero-heading" className="mb-4 bg-linear-to-r from-foreground to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
 							Hey, I&apos;m{' '}
 							<span className="text-primary">l-you</span>
 						</h1>
@@ -114,10 +114,10 @@ const AboutMeContent = async () => {
 			</section>
 
 			{/* About Section */}
-			<section className="border-t bg-muted/30 py-12 md:py-16">
+			<section aria-labelledby="about-heading" className="border-t bg-muted/30 py-12 md:py-16">
 				<div className="container mx-auto px-4">
 					<div className="mx-auto max-w-4xl">
-						<h2 className="mb-12 text-center text-3xl font-bold">
+						<h2 id="about-heading" className="mb-12 text-center text-3xl font-bold">
 							About Me
 						</h2>
 
@@ -163,10 +163,10 @@ const AboutMeContent = async () => {
 			</section>
 
 			{/* Tech Stack Section */}
-			<section className="py-12 md:py-16">
+			<section aria-labelledby="tech-heading" className="py-12 md:py-16">
 				<div className="container mx-auto px-4">
 					<div className="mx-auto max-w-5xl">
-						<h2 className="mb-4 text-center text-3xl font-bold">
+						<h2 id="tech-heading" className="mb-4 text-center text-3xl font-bold">
 							Technologies & Tools
 						</h2>
 						<p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
@@ -201,10 +201,10 @@ const AboutMeContent = async () => {
 			</section>
 
 			{/* Featured Projects */}
-			<section className="border-t bg-muted/30 py-12 md:py-16">
+			<section aria-labelledby="projects-heading" className="border-t bg-muted/30 py-12 md:py-16">
 				<div className="container mx-auto px-4">
 					<div className="mx-auto max-w-5xl">
-						<h2 className="mb-4 text-center text-3xl font-bold">
+						<h2 id="projects-heading" className="mb-4 text-center text-3xl font-bold">
 							Featured Projects
 						</h2>
 						<p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
@@ -254,7 +254,7 @@ const AboutMeContent = async () => {
 			</section>
 
 			<ContactSection />
-		</div>
+		</main>
 	)
 }
 
