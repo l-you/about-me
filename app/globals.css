@@ -124,4 +124,10 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Theme-adaptive external SVG icons */
+  .theme-adaptive-icon {
+    @apply dark:invert dark:brightness-110;
+  }
 }
+

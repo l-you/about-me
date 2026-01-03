@@ -90,7 +90,7 @@ export async function FeaturedProjects() {
 								alt="Revotale Logo"
 								width={16}
 								height={16}
-								className="size-5"
+								className="size-5 theme-adaptive-icon"
 							/>
 						) : null
 					}

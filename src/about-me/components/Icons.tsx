@@ -41,7 +41,7 @@ export const GitHubIcon: FC<{className?: string}> = ({
 		alt="GitHub"
 		width={20}
 		height={20}
-		className={cn('size-5', className)}
+		className={cn('size-5 theme-adaptive-icon', className)}
 	/>
 )
 
@@ -52,7 +52,7 @@ export const XIcon: FC<{className?: string}> = ({className}) => (
 		alt="X (Twitter)"
 		width={20}
 		height={20}
-		className={cn('size-5', className)}
+		className={cn('size-5 theme-adaptive-icon', className)}
 	/>
 )
 
@@ -65,7 +65,7 @@ export const RedditIcon: FC<{className?: string}> = ({
 		alt="Reddit"
 		width={20}
 		height={20}
-		className={cn('size-5', className)}
+		className={cn('size-5 theme-adaptive-icon', className)}
 	/>
 )
 
@@ -78,7 +78,7 @@ export const NpmIcon: FC<{className?: string}> = ({
 		alt="npm"
 		width={20}
 		height={20}
-		className={cn('size-5', className)}
+		className={cn('size-5 theme-adaptive-icon', className)}
 	/>
 )
 
@@ -91,7 +91,7 @@ export const PackagistIcon: FC<{className?: string}> = ({
 		alt="Packagist"
 		width={20}
 		height={20}
-		className={cn('size-5', className)}
+		className={cn('size-5 theme-adaptive-icon', className)}
 	/>
 )
 
@@ -104,7 +104,7 @@ export const StarIcon: FC<{className?: string}> = ({
 		alt="Star"
 		width={16}
 		height={16}
-		className={cn('size-4', className)}
+		className={cn('size-4 theme-adaptive-icon', className)}
 	/>
 )
 
