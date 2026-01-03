@@ -6,7 +6,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card'
-import {Mail} from 'lucide-react'
+import {Mail, Heart} from 'lucide-react'
 import {Suspense, type FunctionComponent} from 'react'
 import {GitHubIcon, RedditIcon, XIcon} from './Icons'
 import MoreContactsSection from './MoreContactsSection'
@@ -70,8 +70,8 @@ export const ContactSection: FunctionComponent = () => {
 
 					{/* Footer Quote */}
 					<div className="mt-12 text-center">
-						<p className="italic text-muted-foreground">
-							&quot;Made with passion ❤️‍🔥&quot;
+						<p className="italic text-muted-foreground flex items-center justify-center gap-1.5">
+							&quot;Made with passion <Heart className="size-4 fill-red-500 text-red-500 inline" />&quot;
 						</p>
 						<p className="mt-2 text-sm text-muted-foreground">
 							Elegant solutions for challenging tasks
