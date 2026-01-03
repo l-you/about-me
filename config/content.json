@@ -72,7 +72,7 @@
       { "name": "Node.js", "icon": "nodejs" },
       { "name": "Symfony", "icon": "symfony" },
       { "name": "GraphQL", "icon": "graphql" },
-      { "name": "Payload CMS", "icon": "nodejs" }
+      { "name": "Payload CMS", "icon": "payloadcms" }
     ],
     "infrastructure": [
       { "name": "PostgreSQL", "icon": "postgresql" },

@@ -11,7 +11,7 @@ interface TechIconProps {
 
 export const TechIcon: FC<TechIconProps> = ({
 	name,
-	className = 'size-4',
+	className = 'size-5',
 }) => {
 	if (!isValidIconName(name)) {
 		return null
@@ -26,7 +26,7 @@ export const TechIcon: FC<TechIconProps> = ({
 			alt={`${name} icon`}
 			width={48}
 			height={48}
-			className={className}
+			className={cn('theme-adaptive-icon', className)}
 		/>
 	)
 }

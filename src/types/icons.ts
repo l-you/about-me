@@ -5,6 +5,7 @@
 
 export const AVAILABLE_ICONS = [
 	'packagist',
+	'payloadcms',
 	'javascript',
 	'linux',
 	'rust',
@@ -41,6 +42,7 @@ export type IconName = typeof AVAILABLE_ICONS[number]
 
 export const iconMap: Record<IconName, string> = {
 	packagist: '/icons/packagist.svg',
+	payloadcms: '/icons/payloadcms.svg',
 	javascript: '/icons/javascript.svg',
 	linux: '/icons/linux.svg',
 	rust: '/icons/rust.svg',

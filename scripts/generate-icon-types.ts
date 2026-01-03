@@ -26,7 +26,19 @@ async function fetchIcon(name: string): Promise<boolean> {
 
 	console.log(`📥 Fetching missing icon: ${name}`)
 
-	// Try devicon first
+		// Try simpleicons
+	try {
+		const response = await fetch(ICON_SOURCES.simpleicons(name))
+		if (response.ok) {
+			const svg = await response.text()
+			writeFileSync(iconPath, svg, 'utf-8')
+			console.log(`✅ Downloaded from simpleicons: ${name}`)
+			return true
+		}
+	} catch (e) {
+		// Ignore
+	}
+	
 	try {
 		const response = await fetch(ICON_SOURCES.devicon(name))
 		if (response.ok) {
@@ -39,18 +51,7 @@ async function fetchIcon(name: string): Promise<boolean> {
 		// Ignore and try next source
 	}
 
-	// Try simpleicons
-	try {
-		const response = await fetch(ICON_SOURCES.simpleicons(name))
-		if (response.ok) {
-			const svg = await response.text()
-			writeFileSync(iconPath, svg, 'utf-8')
-			console.log(`✅ Downloaded from simpleicons: ${name}`)
-			return true
-		}
-	} catch (e) {
-		// Ignore
-	}
+
 
 	console.warn(`⚠️  Could not fetch icon: ${name}`)
 	return false
