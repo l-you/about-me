@@ -4,15 +4,21 @@
  */
 
 export const AVAILABLE_ICONS = [
+	'packagist',
 	'javascript',
 	'rust',
+	'github',
 	'bash',
+	'npm',
+	'x',
 	'symfony',
 	'docker',
 	'nextjs',
 	'nodejs',
 	'php',
 	'typescript',
+	'star',
+	'reddit',
 	'tailwindcss',
 	'redis',
 	'react',
@@ -28,15 +34,21 @@ export const AVAILABLE_ICONS = [
 export type IconName = typeof AVAILABLE_ICONS[number]
 
 export const iconMap: Record<IconName, string> = {
+	packagist: '/icons/packagist.svg',
 	javascript: '/icons/javascript.svg',
 	rust: '/icons/rust.svg',
+	github: '/icons/github.svg',
 	bash: '/icons/bash.svg',
+	npm: '/icons/npm.svg',
+	x: '/icons/x.svg',
 	symfony: '/icons/symfony.svg',
 	docker: '/icons/docker.svg',
 	nextjs: '/icons/nextjs.svg',
 	nodejs: '/icons/nodejs.svg',
 	php: '/icons/php.svg',
 	typescript: '/icons/typescript.svg',
+	star: '/icons/star.svg',
+	reddit: '/icons/reddit.svg',
 	tailwindcss: '/icons/tailwindcss.svg',
 	redis: '/icons/redis.svg',
 	react: '/icons/react.svg',
