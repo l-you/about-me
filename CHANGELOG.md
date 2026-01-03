@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.1.0](https://github.com/l-you/about-me/compare/v1.0.7...v1.1.0) (2026-01-03)
+
+
+### Features
+
+* Add SEO-related meta and markup ([c8e3b0a](https://github.com/l-you/about-me/commit/c8e3b0a211f1342dfb52ad763cb0d17bfbd07476))
+* add source code link ([3886602](https://github.com/l-you/about-me/commit/3886602993962260e26c38d345907ddbcbd714df))
+* Adjust tech I like. Make readme more informative ([a227664](https://github.com/l-you/about-me/commit/a227664f29eacda8f3a3619c778571d2c1529511))
+* automate configss ([f4dac32](https://github.com/l-you/about-me/commit/f4dac3276c797fd99dc6d220e02764729bf299d6))
+* CI with tests ([4132206](https://github.com/l-you/about-me/commit/4132206bee8e2e816e9caac09d3195f3c5087a78))
+* improve UX of the link to source code ([a729970](https://github.com/l-you/about-me/commit/a729970dcd149dfe5490f8164f99ba85164c11a9))
+* more accesible UI ([55a3097](https://github.com/l-you/about-me/commit/55a3097635edcf02801c50a65ff925db146d2291))
+* real giuthub tart during build time ([bf25687](https://github.com/l-you/about-me/commit/bf256873803b56138262c0df4da1e8b0564029d8))
+* replace emoji with real icon. ([cf19ac4](https://github.com/l-you/about-me/commit/cf19ac4c7df79b970b22f6ace9aca56b65535fc4))
+
+
+### Bug Fixes
+
+* adjust text ([1694858](https://github.com/l-you/about-me/commit/16948587ae6a6fbf0fdddcfd30c3cc1f68db0f4d))
+* adjust text ([c8e2663](https://github.com/l-you/about-me/commit/c8e2663027c332f553470131b68ed55d6b7ba35a))
+* Better rotation alignment ([20e4089](https://github.com/l-you/about-me/commit/20e40894ce5154ceab3ea2ecd755182a28268d25))
+* better slogan ([c289aa0](https://github.com/l-you/about-me/commit/c289aa08c4e77450c598d9d93013abcae5a4d57e))
+* better underline ([53487a1](https://github.com/l-you/about-me/commit/53487a15ba56f2faf059783080ceb720e374bea1))
+* missing sizes ([20f6e3c](https://github.com/l-you/about-me/commit/20f6e3cb684e6740d482ba8190be8f66e264b46a))
+* return back game icon ([8e02462](https://github.com/l-you/about-me/commit/8e024621aada2037eae5db6f67f1161c542dd2dc))
+
 ## [1.0.7](https://github.com/l-you/about-me/compare/v1.0.6...v1.0.7) (2025-12-31)
 
 
