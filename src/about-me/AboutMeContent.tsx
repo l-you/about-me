@@ -11,6 +11,7 @@ import {
 	Code2,
 	Database,
 	Gamepad2,
+	HeartIcon,
 	Lightbulb,
 	Mail,
 	MapPin,
@@ -130,18 +131,21 @@ const AboutMeContent: FunctionComponent = () => {
 							<AboutCard
 								icon={<Wrench className="size-5" />}
 								title="UI/UX Focus"
-								description="Crafting simple, eye-friendly UI and delivering a smooth UX. Every pixel matters. ❤️"
+								description="Crafting simple, eye-friendly UI and delivering a smooth UX. Every pixel matters. "
+								endIcon={
+									<HeartIcon className="size-4 inline mb-1 text-red-500 fill-red-500" />
+								}
 							/>
 						
 							<AboutCard
 								icon={<Rocket className="size-5" />}
 								title="Innovation Driven"
-								description="I have a desire for innovation and improvement, replacing outdated code with cutting-edge technologies 🚀"
+								description="I have a desire for innovation and improvement, replacing outdated code with cutting-edge technologies"
 							/>
 							<AboutCard
 								icon={<Zap className="size-5" />}
 								title="Codebase Rescuer"
-								description="Hardened by dealing with tons of legacy code. Solving problems nobody wants to solve. ⚡"
+								description="Hardened by dealing with tons of legacy code. Solving problems nobody wants to solve."
 							/>
 							<AboutCard
 								icon={<Rocket className="size-5" />}
@@ -151,7 +155,7 @@ const AboutMeContent: FunctionComponent = () => {
 							<AboutCard
 								icon={<BookOpen className="size-5" />}
 								title="Lifestyle and software"
-								description="I believe that learning a variety of information and skills in life enables the brain to produce better software."
+								description="I believe that learning a variety of information and skills in life enables the brain to make a better software solutions."
 							/>
 						</div>
 
@@ -253,7 +257,7 @@ const AboutMeContent: FunctionComponent = () => {
 								href="https://github.com/l-you/about-me"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="underline decoration-1 underline-offset-2 transition-colors underline-offset-3 hover:text-foreground">
+								className="underline decoration-1 transition-colors underline-offset-3 hover:text-foreground">
 								Explore source code
 							</Link> of this web page
 								</p>
@@ -272,7 +276,8 @@ const AboutCard: FunctionComponent<{
 	icon: React.ReactNode
 	title: string
 	description: string
-}> = ({icon, title, description}) => (
+	endIcon?: React.ReactNode
+}> = ({icon, title, description, endIcon}) => (
 	<Card className="group transition-all hover:shadow-md">
 		<CardHeader className="">
 			<div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
@@ -281,7 +286,7 @@ const AboutCard: FunctionComponent<{
 			<CardTitle className="text-lg">{title}</CardTitle>
 		</CardHeader>
 		<CardContent>
-			<p className="text-sm text-muted-foreground">{description}</p>
+			<p className="text-sm text-muted-foreground">{description}{endIcon}</p>
 		</CardContent>
 	</Card>
 )
