@@ -7,10 +7,12 @@ import {iconMap, isValidIconName} from '@/src/types/icons'
 interface TechIconProps {
 	name: string
 	className?: string
+	inverColors?: boolean
 }
 
 export const TechIcon: FC<TechIconProps> = ({
 	name,
+	inverColors,
 	className = 'size-5',
 }) => {
 	if (!isValidIconName(name)) {
@@ -26,7 +28,7 @@ export const TechIcon: FC<TechIconProps> = ({
 			alt={`${name} icon`}
 			width={48}
 			height={48}
-			className={cn('theme-adaptive-icon', className)}
+			className={cn(inverColors?'theme-adaptive-icon':'', className)}
 		/>
 	)
 }
@@ -112,7 +114,7 @@ export const StarIcon: FC<{className?: string}> = ({
 interface TechCategoryProps {
 	icon: ReactNode
 	title: string
-	techs: Array<{name: string; icon: string}>
+	techs: Array<{name: string; icon: string, invertColor: boolean}>
 }
 
 export const TechCategory: FC<TechCategoryProps> = ({
@@ -132,7 +134,7 @@ export const TechCategory: FC<TechCategoryProps> = ({
 						key={tech.name}
 						variant="secondary"
 						className="gap-2 px-3 py-1.5 text-sm">
-						<TechIcon name={tech.icon} />
+						<TechIcon inverColors={tech.invertColor} name={tech.icon} />
 						{tech.name}
 					</Badge>
 				))}

@@ -127,7 +127,7 @@
 
   /* Theme-adaptive external SVG icons */
   .theme-adaptive-icon {
-    @apply dark:invert dark:brightness-110;
+    @apply dark:invert dark:brightness-80;
   }
 }
 

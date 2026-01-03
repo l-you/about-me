@@ -55,36 +55,36 @@
   ],
   "technologies": {
     "programmingLanguages": [
-      { "name": "Go", "icon": "go" },
-      { "name": "PHP", "icon": "php" },
-      { "name": "TypeScript", "icon": "typescript" },
-      { "name": "JavaScript", "icon": "javascript" },
-      { "name": "Rust", "icon": "rust" },
-      { "name": "Bash", "icon": "bash" }
+      { "name": "Go", "icon": "go","invertColor": false },
+      { "name": "PHP", "icon": "php","invertColor": false  },
+      { "name": "TypeScript", "icon": "typescript","invertColor": false  },
+      { "name": "JavaScript", "icon": "javascript","invertColor": false  },
+      { "name": "Rust", "icon": "rust","invertColor": true  },
+      { "name": "Bash", "icon": "bash","invertColor": true  }
     ],
     "frontend": [
-      { "name": "React", "icon": "react" },
-      { "name": "Next.js", "icon": "nextjs" },
-      { "name": "Tailwind CSS", "icon": "tailwindcss" },
-      { "name": "Radix UI", "icon": "radixui" }
+      { "name": "React", "icon": "react","invertColor": false  },
+      { "name": "Next.js", "icon": "nextjs","invertColor": false  },
+      { "name": "Tailwind CSS", "icon": "tailwindcss","invertColor": false  },
+      { "name": "Radix UI", "icon": "radixui" ,"invertColor": true }
     ],
     "backend": [
-      { "name": "Node.js", "icon": "nodejs" },
-      { "name": "Symfony", "icon": "symfony" },
-      { "name": "GraphQL", "icon": "graphql" },
-      { "name": "Payload CMS", "icon": "payloadcms" }
+      { "name": "Node.js", "icon": "nodejs","invertColor": false  },
+      { "name": "Symfony", "icon": "symfony","invertColor": true  },
+      { "name": "GraphQL", "icon": "graphql","invertColor": false  },
+      { "name": "Payload CMS", "icon": "payloadcms","invertColor": true }
     ],
     "infrastructure": [
-      { "name": "PostgreSQL", "icon": "postgresql" },
-      { "name": "MariaDB", "icon": "mariadb" },
-      { "name": "Redis", "icon": "redis" },
-      { "name": "Docker", "icon": "docker" },
-      { "name": "Nginx", "icon": "nginx" },
-      { "name": "Traefik", "icon": "traefikproxy" }
+      { "name": "PostgreSQL", "icon": "postgresql" ,"invertColor": false },
+      { "name": "MariaDB", "icon": "mariadb","invertColor": true  },
+      { "name": "Redis", "icon": "redis" ,"invertColor": false },
+      { "name": "Docker", "icon": "docker","invertColor": false  },
+      { "name": "Nginx", "icon": "nginx","invertColor": false  },
+      { "name": "Traefik", "icon": "traefikproxy","invertColor": false  }
     ],
     "operatingSystems": [
-      { "name": "macOS", "icon": "apple" },
-      { "name": "Linux", "icon": "linux" }
+      { "name": "macOS", "icon": "apple","invertColor": true  },
+      { "name": "Linux", "icon": "linux","invertColor": false  }
     ]
   }
 }

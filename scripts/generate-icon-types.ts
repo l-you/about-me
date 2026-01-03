@@ -20,24 +20,10 @@ const ICON_SOURCES = {
 async function fetchIcon(name: string): Promise<boolean> {
 	const iconPath = join(ICONS_DIR, `${name}.svg`)
 
-	if (existsSync(iconPath)) {
-		return true
-	}
+
 
 	console.log(`📥 Fetching missing icon: ${name}`)
 
-		// Try simpleicons
-	try {
-		const response = await fetch(ICON_SOURCES.simpleicons(name))
-		if (response.ok) {
-			const svg = await response.text()
-			writeFileSync(iconPath, svg, 'utf-8')
-			console.log(`✅ Downloaded from simpleicons: ${name}`)
-			return true
-		}
-	} catch (e) {
-		// Ignore
-	}
 	
 	try {
 		const response = await fetch(ICON_SOURCES.devicon(name))
@@ -52,6 +38,18 @@ async function fetchIcon(name: string): Promise<boolean> {
 	}
 
 
+		// Try simpleicons
+	try {
+		const response = await fetch(ICON_SOURCES.simpleicons(name))
+		if (response.ok) {
+			const svg = await response.text()
+			writeFileSync(iconPath, svg, 'utf-8')
+			console.log(`✅ Downloaded from simpleicons: ${name}`)
+			return true
+		}
+	} catch (e) {
+		// Ignore
+	}
 
 	console.warn(`⚠️  Could not fetch icon: ${name}`)
 	return false
