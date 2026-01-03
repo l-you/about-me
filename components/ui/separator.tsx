@@ -1,4 +1,3 @@
-"use client"
 
 import {type ComponentProps} from "react"
 import {Root as SeparatorRoot} from "@radix-ui/react-separator"
