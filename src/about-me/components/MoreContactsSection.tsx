@@ -7,7 +7,7 @@ import { NpmIcon, PackagistIcon} from './Icons'
 import { usePathname, useSearchParams } from 'next/navigation'
 import ContactButton from './ContextButton'
 import Link from 'next/link'
-import { connectButtonClassName, ConntectButtonContent } from './connectButtonSkeleton'
+import { connectButtonClassName, ConnectButtonContent } from './connectButtonSkeleton'
 const MoreContactsSection:FunctionComponent = () => {
     const searchParams = useSearchParams()
     const isExpanded = searchParams.get('more_contacts') === '1'
@@ -27,7 +27,7 @@ const MoreContactsSection:FunctionComponent = () => {
     return <>
 								
 									<Link className={connectButtonClassName} href={toggledLink} scroll={false}>
-                                    <ConntectButtonContent isExpanded={isExpanded}/>
+                                    <ConnectButtonContent isExpanded={isExpanded}/>
                                     </Link>
 
 								{isExpanded && (

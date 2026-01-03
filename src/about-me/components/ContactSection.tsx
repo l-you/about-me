@@ -11,7 +11,7 @@ import {Suspense, type FunctionComponent} from 'react'
 import {GitHubIcon, RedditIcon, XIcon} from './Icons'
 import MoreContactsSection from './MoreContactsSection'
 import ContactButton from './ContextButton'
-import { connectButtonClassName, ConntectButtonContent } from './connectButtonSkeleton'
+import { connectButtonClassName, ConnectButtonContent } from './connectButtonSkeleton'
 
 export const ContactSection: FunctionComponent = () => {
 
@@ -61,7 +61,7 @@ export const ContactSection: FunctionComponent = () => {
 
 							{/* Expandable section */}
 							<div className="mt-6">
-							 <Suspense fallback={<div className={connectButtonClassName}><ConntectButtonContent isExpanded={false} /></div>}>
+							 <Suspense fallback={<div className={connectButtonClassName}><ConnectButtonContent isExpanded={false} /></div>}>
 								<MoreContactsSection />
 							 </Suspense>
 							</div>

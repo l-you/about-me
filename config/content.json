@@ -2,14 +2,14 @@
   "featuredProjects": [
     {
       "title": "next-scroll-restorer",
-      "description": "Scroll restoration for Next.js apps built with app directory. Fixed bugs that Next.js team do not fix.",
+      "description": "Scroll restoration for Next.js apps built with app directory. Fixed bugs that the Next.js team does not fix.",
       "stars": 107,
       "language": "TypeScript",
       "href": "https://github.com/RevoTale/next-scroll-restorer"
     },
     {
         "title":"RevoTale",
-        "description":"Website where I deploy some of my projects and write blog notes.",
+        "description":"A website where I deploy some of my projects and write blog notes.",
         "icon":"revotale",
         "href":"https://revotale.com"
     },

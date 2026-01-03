@@ -6,10 +6,10 @@ import type { FunctionComponent } from "react";
 const connectButtonClassName = cn(buttonVariants({variant: "ghost"}),'w-full gap-2')
 export {connectButtonClassName};
 
-const ConntectButtonContent:FunctionComponent<{isExpanded: boolean}> = ({isExpanded}) => {
+const ConnectButtonContent:FunctionComponent<{isExpanded: boolean}> = ({isExpanded}) => {
     return <><ChevronDown
 										className={`size-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
 									/>
 									More ways to connect</>
 }
-export {ConntectButtonContent}
+export {ConnectButtonContent}

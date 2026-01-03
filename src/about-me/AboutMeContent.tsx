@@ -51,7 +51,7 @@ const AboutMeContent: FunctionComponent = () => {
 								<div className="absolute h-min flex items-center -left-12 md:left-auto -bottom-14 md:-right-40 md:top-6 gap-2 md:gap-3 md:items-end md:flex-row flex-col">
 									<ArrowDown className="size-5 text-muted-foreground animate-bounce md:rotate-70 rotate-215" />
 									<p className="text-xs text-muted-foreground italic max-w-30 text-left">
-										Yes, that&apos;s the real photo of myself <span className='not-italic'>:)</span>
+										Yes, that&apos;s the real photo of myself. <span className='not-italic'>:)</span>
 									</p>
 								</div>
 							</div>
@@ -63,11 +63,7 @@ const AboutMeContent: FunctionComponent = () => {
 						</h1>
 
 						<p className="mx-auto mb-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-							A {' '}
-							<span className="font-semibold text-foreground">
-								Full-Stack Developer
-							</span>{' '}
-							generating revenue since 2018.<br/>
+							A <span className="font-semibold text-foreground">Full-Stack Developer</span> generating revenue since 2018.<br/>
 							Hardened by tons of legacy code.
 						</p>
 
@@ -129,7 +125,7 @@ const AboutMeContent: FunctionComponent = () => {
 							<AboutCard
 								icon={<Lightbulb className="size-5" />}
 								title="KISS Principle"
-								description="Keeping the architecture simple, stupid. Ensuring low resource usage by utilizing the most appropriate technologies."
+								description="Keeping the architecture simple and stupid (KISS). Ensuring low resource usage by utilizing the most appropriate technologies."
 							/>
 							<AboutCard
 								icon={<Wrench className="size-5" />}
@@ -140,22 +136,22 @@ const AboutMeContent: FunctionComponent = () => {
 							<AboutCard
 								icon={<Rocket className="size-5" />}
 								title="Innovation Driven"
-								description="I have an desire for innovation and improvement replacing outdated code with cutting-edge technologies 🚀"
+								description="I have a desire for innovation and improvement, replacing outdated code with cutting-edge technologies 🚀"
 							/>
 							<AboutCard
 								icon={<Zap className="size-5" />}
 								title="Codebase Rescuer"
-								description="Hardened by dealing with tons of legacy code. Solving problems nobody want to solve. ⚡"
+								description="Hardened by dealing with tons of legacy code. Solving problems nobody wants to solve. ⚡"
 							/>
 							<AboutCard
 								icon={<Rocket className="size-5" />}
 								title="Details Matter"
-								description="I enjoy paying attention to small details which, as practice shows, increase the conversion rate so good."
+								description="I enjoy paying attention to small details which, as practice shows, increase the conversion rate significantly."
 							/>
 							<AboutCard
 								icon={<BookOpen className="size-5" />}
 								title="Lifestyle and software"
-								description="I believe that learning a variety of information and skills in life creates conditions for our brain to produce better software."
+								description="I believe that learning a variety of information and skills in life enables the brain to produce better software."
 							/>
 						</div>
 
@@ -171,7 +167,7 @@ const AboutMeContent: FunctionComponent = () => {
 							Technologies & Tools
 						</h2>
 						<p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-							Core technologies I prefer and use as of today
+							Core technologies I prefer and use today
 						</p>
 
 						<TechCategory
@@ -209,7 +205,7 @@ const AboutMeContent: FunctionComponent = () => {
 							Featured Projects
 						</h2>
 						<p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-							Personal projects, open-source libraries and tools I&apos;m building
+							Personal projects, open-source libraries, and tools I&apos;m building
 						</p>
 
 						<div className="grid gap-6 md:grid-cols-2">
@@ -258,7 +254,7 @@ const AboutMeContent: FunctionComponent = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 								className="underline decoration-1 underline-offset-2 transition-colors hover:text-foreground">
-								Explode the source code
+								Explore source code
 							</Link> of this web page
 								</p>
 						</div>
