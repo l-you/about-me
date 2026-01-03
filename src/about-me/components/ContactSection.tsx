@@ -12,6 +12,9 @@ import {GitHubIcon, RedditIcon, XIcon} from './Icons'
 import MoreContactsSection from './MoreContactsSection'
 import ContactButton from './ContextButton'
 import { connectButtonClassName, ConnectButtonContent } from './connectButtonSkeleton'
+import contentConfig from '@/config/content.json'
+
+const { site } = contentConfig;
 
 export const ContactSection: FunctionComponent = () => {
 
@@ -34,28 +37,28 @@ export const ContactSection: FunctionComponent = () => {
 							{/* Primary Contact Options */}
 							<div className="grid gap-4 sm:grid-cols-2">
 								<ContactButton
-									href="https://github.com/l-you"
+									href={`https://github.com/${site.social.github}`}
 									icon={<GitHubIcon />}
 									title="GitHub"
-									subtitle="@l-you"
+									subtitle={`@${site.social.github}`}
 								/>
 								<ContactButton
-									href="mailto:l-you@revotale.com"
+									href={`mailto:${site.email}`}
 									icon={<Mail className="size-5" />}
 									title="Email"
-									subtitle="l-you@revotale.com"
+									subtitle={site.email}
 								/>
 								<ContactButton
-									href="https://x.com/x_l_you"
+									href={`https://x.com/${site.social.twitter}`}
 									icon={<XIcon />}
 									title="X (Twitter)"
-									subtitle="@x_l_you"
+									subtitle={`@${site.social.twitter}`}
 								/>
 								<ContactButton
-									href="https://www.reddit.com/user/you-l-you"
+									href={`https://www.reddit.com/user/${site.social.reddit}`}
 									icon={<RedditIcon />}
 									title="Reddit"
-									subtitle="u/you-l-you"
+									subtitle={`u/${site.social.reddit}`}
 								/>
 							</div>
 

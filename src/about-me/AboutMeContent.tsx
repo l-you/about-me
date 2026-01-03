@@ -27,6 +27,8 @@ import {GitHubIcon, TechCategory} from './components/Icons'
 import {FeaturedProjects} from './components/FeaturedProjects'
 import Image from 'next/image'
 
+const { site } = contentConfig;
+
 const AboutMeContent = async () => {
 	return (
 		<main className="min-h-screen bg-background">
@@ -40,10 +42,8 @@ const AboutMeContent = async () => {
 								<div className="absolute -inset-1 rounded-full bg-linear-to-r from-primary/20 to-accent/20 blur-md" />
 								<div className="relative flex h-32 w-32 items-center justify-center rounded-full border-2 border-border bg-card overflow-hidden shadow-lg">
 									<Image
-										src="https://2.gravatar.com/avatar/eb7387f4ea2542d6d90e970a9180ea931ece91bf0e826ba175e46d6fc7ccb585?size=256"
-										alt="l-you avatar"
-										width={128}
-										height={128}
+								src={site.avatarThumbnailUrl}
+								alt={`${site.nickname} avatar`}
 										className="h-full w-full object-cover"
 									/>
 								</div>
@@ -59,11 +59,11 @@ const AboutMeContent = async () => {
 
 						<h1 id="hero-heading" className="mb-4 bg-linear-to-r from-foreground to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
 							Hey, I&apos;m{' '}
-							<span className="text-primary">l-you</span>
+							<span className="text-primary">{site.nickname}</span>
 						</h1>
 
 						<p className="mx-auto mb-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-							A <span className="font-semibold text-foreground">Full-Stack Developer</span> generating revenue since 2018.<br/>
+							A <span className="font-semibold text-foreground">{site.title}</span> generating revenue since 2018.<br/>
 							Hardened by tons of legacy code.
 						</p>
 
@@ -78,13 +78,13 @@ const AboutMeContent = async () => {
 								variant="outline"
 								className="gap-1.5 px-3 py-1">
 								<MapPin className="size-3.5" />
-								Web
+								{site.location}
 							</Badge>
 							<Badge
 								variant="outline"
 								className="gap-1.5 px-3 py-1">
 								<Rocket className="size-3.5" />
-								Senior Engineer
+								{site.jobTitle}
 							</Badge>
 						</div>
 
@@ -101,7 +101,7 @@ const AboutMeContent = async () => {
 								size="lg"
 								className="gap-2">
 								<Link
-									href="https://github.com/l-you"
+									href={`https://github.com/${site.social.github}`}
 									target="_blank"
 									rel="noopener noreferrer">
 									<GitHubIcon className="size-4" />
@@ -220,7 +220,7 @@ const AboutMeContent = async () => {
 							<div className='flex gap-4 items-center justify-center flex-wrap'>
 								<Button asChild variant="secondary" className="gap-2" >
 								<Link
-									href="https://github.com/RevoTale"
+									href={`https://github.com/${site.social.github}`}
 									target="_blank"
 									rel="noopener noreferrer">
 										<GitHubIcon className='size-4'/><ArrowLeft className="size-3" /> 
@@ -228,20 +228,22 @@ const AboutMeContent = async () => {
 					
 								</Link>
 							</Button>
-							<Button asChild variant="secondary" className="gap-2">
-								<Link
-									href="https://github.com/RevoTale"
-									target="_blank"
-									rel="noopener noreferrer">
-									RevoTale 
-									<ArrowRight className="size-3" />
-									<GitHubIcon className='size-4'/>
-								</Link>
-							</Button>
+							{site.social.githubOrg && (
+								<Button asChild variant="secondary" className="gap-2">
+									<Link
+										href={`https://github.com/${site.social.githubOrg}`}
+										target="_blank"
+										rel="noopener noreferrer">
+										{site.social.githubOrg} 
+										<ArrowRight className="size-3" />
+										<GitHubIcon className='size-4'/>
+									</Link>
+								</Button>
+							)}
 							</div>
 								<p className="mt-6 text-sm text-muted-foreground">
 									<Link
-								href="https://github.com/l-you/about-me"
+								href={`https://github.com/${site.social.github}/about-me`}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="underline decoration-1 transition-colors underline-offset-3 hover:text-foreground">

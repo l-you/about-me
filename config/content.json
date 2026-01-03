@@ -1,4 +1,26 @@
 {
+  "site": {
+    "domain": "https://l-you.revotale.com",
+    "nickname": "l-you",
+    "alternateName": ["l-you", "RevoTale"],
+    "email": "l-you@revotale.com",
+    "avatarUrl": "https://2.gravatar.com/avatar/eb7387f4ea2542d6d90e970a9180ea931ece91bf0e826ba175e46d6fc7ccb585?size=512",
+    "avatarThumbnailUrl": "https://2.gravatar.com/avatar/eb7387f4ea2542d6d90e970a9180ea931ece91bf0e826ba175e46d6fc7ccb585?size=256",
+    "title": "Full-Stack Developer",
+    "description": "Full-Stack Developer since 2018. Building scalable web applications with Go, PHP, TypeScript, and React. Open for collaboration.",
+    "jobTitle": "Senior Full-Stack Developer",
+    "location": "Web",
+    "websiteUrl": "https://revotale.com",
+    "blogUrl": "https://revotale.com/blog",
+    "social": {
+      "github": "l-you",
+      "githubOrg": "RevoTale",
+      "twitter": "x_l_you",
+      "reddit": "you-l-you",
+      "npm": "grisaia",
+      "packagist": "grisaia"
+    }
+  },
   "featuredProjects": [
     {
       "title": "next-scroll-restorer",

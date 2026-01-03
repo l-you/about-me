@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import contentConfig from "@/config/content.json";
+
+const { site } = contentConfig;
 
 const inter = Inter({
   variable: "--font-sans",
@@ -24,16 +27,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://l-you.revotale.com"),
+  metadataBase: new URL(site.domain),
   title: {
-    default: "l-you | Full-Stack Developer",
-    template: "%s | l-you",
+    default: `${site.nickname} | ${site.title}`,
+    template: `%s | ${site.nickname}`,
   },
-  description: "Full-Stack Developer since 2018. Building scalable web applications with Go, PHP, TypeScript, and React. Open for collaboration.",
-  applicationName: "l-you Portfolio",
-  authors: [{ name: "l-you", url: "https://github.com/l-you" }],
-  creator: "l-you",
-  publisher: "l-you",
+  description: site.description,
+  applicationName: `${site.nickname} Portfolio`,
+  authors: [{ name: site.nickname, url: `https://github.com/${site.social.github}` }],
+  creator: site.nickname,
+  publisher: site.nickname,
   robots: {
     index: true,
     follow: true,
@@ -51,12 +54,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     locale: "en_US",
-    siteName: "l-you Portfolio",
-    firstName: "l-you",
+    siteName: `${site.nickname} Portfolio`,
+    firstName: site.nickname,
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@x_l_you",
+    creator: `@${site.social.twitter}`,
   },
 };
 

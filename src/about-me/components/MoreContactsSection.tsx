@@ -8,6 +8,10 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import ContactButton from './ContextButton'
 import Link from 'next/link'
 import { connectButtonClassName, ConnectButtonContent } from './connectButtonSkeleton'
+import contentConfig from '@/config/content.json'
+
+const { site } = contentConfig;
+
 const MoreContactsSection:FunctionComponent = () => {
     const searchParams = useSearchParams()
     const isExpanded = searchParams.get('more_contacts') === '1'
@@ -34,38 +38,46 @@ const MoreContactsSection:FunctionComponent = () => {
 									<div className="mt-6 space-y-4 animate-in fade-in slide-in-from-top-2">
 										<Separator />
 										<div className="grid gap-4 sm:grid-cols-2">
-											<ContactButton
-												href="https://revotale.com"
-												icon={
-													<ExternalLink className="size-5" />
-												}
-												title="Website"
-												subtitle="revotale.com"
-												variant="ghost"
-											/>
-											<ContactButton
-												href="https://revotale.com/blog"
-												icon={
-													<BookOpen className="size-5" />
-												}
-												title="Blog"
-												subtitle="Tech notes & insights"
-												variant="ghost"
-											/>
-											<ContactButton
-												href="https://www.npmjs.com/~grisaia"
-												icon={<NpmIcon />}
-												title="npm"
-												subtitle="~grisaia"
-												variant="ghost"
-											/>
-											<ContactButton
-												href="https://packagist.org/users/grisaia/"
-												icon={<PackagistIcon />}
-												title="Packagist"
-												subtitle="grisaia"
-												variant="ghost"
-											/>
+											{site.websiteUrl && (
+												<ContactButton
+													href={site.websiteUrl}
+													icon={
+														<ExternalLink className="size-5" />
+													}
+													title="Website"
+													subtitle={site.websiteUrl.replace(/^https?:\/\//, '')}
+													variant="ghost"
+												/>
+											)}
+											{site.blogUrl && (
+												<ContactButton
+													href={site.blogUrl}
+													icon={
+														<BookOpen className="size-5" />
+													}
+													title="Blog"
+													subtitle="Tech notes & insights"
+													variant="ghost"
+												/>
+											)}
+											{site.social.npm && (
+												<ContactButton
+													href={`https://www.npmjs.com/~${site.social.npm}`}
+													icon={<NpmIcon />}
+													title="npm"
+													subtitle={`~${site.social.npm}`}
+													variant="ghost"
+												/>
+											)}
+											{site.social.packagist && (
+												<ContactButton
+													href={`https://packagist.org/users/${site.social.packagist}/`}
+													icon={<PackagistIcon />}
+													title="Packagist"
+													subtitle={site.social.packagist}
+													variant="ghost"
+												/>
+											)}
 										</div>
 									</div>
 								)}
