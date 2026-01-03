@@ -135,7 +135,7 @@ const AboutMeContent = async () => {
 							<AboutCard
 								icon={<Lightbulb className="size-5" />}
 								title="KISS Principle"
-								description="Keep It Simple, Stupid. Building straightforward solutions that are easy to understand and maintain, without unnecessary complexity."
+								description="'Keep It Simple, Stupid!'. I'm building straightforward solutions that are easy to understand and maintain, avoiding unnecessary complexity."
 							/>
 							<AboutCard
 								icon={<Wrench className="size-5" />}
