@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/l-you/about-me/compare/v1.2.1...v1.3.0) (2026-01-03)
+
+
+### Features
+
+* more accuratetech stack ([62c907f](https://github.com/l-you/about-me/commit/62c907fe775328aa3230a6e7730fdfd0133d7920))
+
+
+### Bug Fixes
+
+* update order of tech ([2368723](https://github.com/l-you/about-me/commit/23687230531187aad430e27a998b0cf1fb5d7a2f))
+
 ## [1.2.1](https://github.com/l-you/about-me/compare/v1.2.0...v1.2.1) (2026-01-03)
 
 
