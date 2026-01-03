@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.6.0](https://github.com/l-you/about-me/compare/v1.5.0...v1.6.0) (2026-01-03)
+
+
+### Features
+
+* much better support foricons light/dark theme: manually invert colors for specific icons ([5fee307](https://github.com/l-you/about-me/commit/5fee307bc77b004d52884b71c1d79ec4b5ce7ad2))
+* payloadcms icon, invert color for dark theme ([fd54d1c](https://github.com/l-you/about-me/commit/fd54d1c7be5678f43a8a3f0bf830ffe7c888c8fa))
+
+
+### Bug Fixes
+
+* better grammar ([9318ae2](https://github.com/l-you/about-me/commit/9318ae26dd3c6568a210f25a968948d611ef7c63))
+
 ## [1.5.0](https://github.com/l-you/about-me/compare/v1.4.0...v1.5.0) (2026-01-03)
 
 
