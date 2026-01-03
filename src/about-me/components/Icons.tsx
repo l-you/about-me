@@ -1,7 +1,7 @@
 import {cn} from '@/lib/utils'
 import {Badge} from '@/components/ui/badge'
 import Image from 'next/image'
-import type {FunctionComponent, ReactNode} from 'react'
+import {type FC, type ReactNode} from 'react'
 import {iconMap, isValidIconName} from '@/src/types/icons'
 
 interface TechIconProps {
@@ -9,7 +9,7 @@ interface TechIconProps {
 	className?: string
 }
 
-export const TechIcon: FunctionComponent<TechIconProps> = ({
+export const TechIcon: FC<TechIconProps> = ({
 	name,
 	className = 'size-4',
 }) => {
@@ -32,7 +32,7 @@ export const TechIcon: FunctionComponent<TechIconProps> = ({
 }
 
 // Social Icons as external SVG resources
-export const GitHubIcon: FunctionComponent<{className?: string}> = ({
+export const GitHubIcon: FC<{className?: string}> = ({
 	className,
 }) => (
 	<Image
@@ -45,7 +45,7 @@ export const GitHubIcon: FunctionComponent<{className?: string}> = ({
 	/>
 )
 
-export const XIcon: FunctionComponent<{className?: string}> = ({className}) => (
+export const XIcon: FC<{className?: string}> = ({className}) => (
 	<Image
 		src="/icons/x.svg"
 		loading='lazy'
@@ -56,7 +56,7 @@ export const XIcon: FunctionComponent<{className?: string}> = ({className}) => (
 	/>
 )
 
-export const RedditIcon: FunctionComponent<{className?: string}> = ({
+export const RedditIcon: FC<{className?: string}> = ({
 	className,
 }) => (
 	<Image
@@ -69,7 +69,7 @@ export const RedditIcon: FunctionComponent<{className?: string}> = ({
 	/>
 )
 
-export const NpmIcon: FunctionComponent<{className?: string}> = ({
+export const NpmIcon: FC<{className?: string}> = ({
 	className,
 }) => (
 	<Image
@@ -82,7 +82,7 @@ export const NpmIcon: FunctionComponent<{className?: string}> = ({
 	/>
 )
 
-export const PackagistIcon: FunctionComponent<{className?: string}> = ({
+export const PackagistIcon: FC<{className?: string}> = ({
 	className,
 }) => (
 	<Image
@@ -95,7 +95,7 @@ export const PackagistIcon: FunctionComponent<{className?: string}> = ({
 	/>
 )
 
-export const StarIcon: FunctionComponent<{className?: string}> = ({
+export const StarIcon: FC<{className?: string}> = ({
 	className,
 }) => (
 	<Image
@@ -115,7 +115,7 @@ interface TechCategoryProps {
 	techs: Array<{name: string; icon: string}>
 }
 
-export const TechCategory: FunctionComponent<TechCategoryProps> = ({
+export const TechCategory: FC<TechCategoryProps> = ({
 	icon,
 	title,
 	techs,
