@@ -14,6 +14,7 @@ import {
 	Lightbulb,
 	Mail,
 	MapPin,
+	Monitor,
 	Rocket,
 	Server,
 	Terminal,
@@ -197,6 +198,12 @@ const AboutMeContent = async () => {
 							icon={<Database className="size-5" />}
 							title="Databases & Infrastructure"
 							techs={contentConfig.technologies.infrastructure}
+						/>
+						<Separator className="my-6" />
+						<TechCategory
+							icon={<Monitor className="size-5" />}
+							title="Operating Systems"
+							techs={contentConfig.technologies.operatingSystems}
 						/>
 					</div>
 				</div>

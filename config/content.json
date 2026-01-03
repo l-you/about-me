@@ -63,7 +63,8 @@
     "frontend": [
       { "name": "React", "icon": "react" },
       { "name": "Next.js", "icon": "nextjs" },
-      { "name": "Tailwind CSS", "icon": "tailwindcss" }
+      { "name": "Tailwind CSS", "icon": "tailwindcss" },
+      { "name": "Radix UI", "icon": "radixui" }
     ],
     "backend": [
       { "name": "Node.js", "icon": "nodejs" },
@@ -73,10 +74,15 @@
     ],
     "infrastructure": [
       { "name": "PostgreSQL", "icon": "postgresql" },
-      { "name": "MySQL", "icon": "mysql" },
+      { "name": "MariaDB", "icon": "mariadb" },
       { "name": "Redis", "icon": "redis" },
       { "name": "Docker", "icon": "docker" },
-      { "name": "Nginx", "icon": "nginx" }
+      { "name": "Nginx", "icon": "nginx" },
+      { "name": "Traefik", "icon": "traefikproxy" }
+    ],
+    "operatingSystems": [
+      { "name": "macOS", "icon": "apple" },
+      { "name": "Linux", "icon": "linux" }
     ]
   }
 }
