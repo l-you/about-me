@@ -24,14 +24,14 @@
   "featuredProjects": [
     {
       "title": "next-scroll-restorer",
-      "description": "Scroll restoration for Next.js apps built with app directory. Fixed bugs that the Next.js team does not fix.",
+      "description": "Scroll restoration for Next.js apps built with app directory. Addresses critical bugs which Next.js team is not going to fix..",
       "stars": 107,
       "language": "TypeScript",
       "href": "https://github.com/RevoTale/next-scroll-restorer"
     },
     {
         "title":"RevoTale",
-        "description":"A website where I deploy some of my projects and write blog notes.",
+        "description":"A platform showcasing my projects and blog posts.",
         "icon":"revotale",
         "href":"https://revotale.com"
     },
@@ -39,7 +39,7 @@
   
     {
       "title": "obsidian-folder-by-tags",
-      "description": "Automatically group Obsidian notes into folders by tags specified in the note.",
+      "description": "Automatically organize Obsidian notes into folders by tags for better knowledge management.",
       "stars": 12,
       "language": "TypeScript",
       "href": "https://github.com/RevoTale/obsidian-folder-by-tags-distributor"

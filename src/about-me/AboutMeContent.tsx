@@ -32,9 +32,16 @@ const { site } = contentConfig;
 
 const AboutMeContent = async () => {
 	return (
-		<main className="min-h-screen bg-background">
-			{/* Hero Section */}
-			<section aria-labelledby="hero-heading" className="relative overflow-hidden">
+		<>
+			<a
+				href="#main-content"
+				className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded"
+			>
+				Skip to main content
+			</a>
+			<main id="main-content" className="min-h-screen bg-background">
+				{/* Hero Section */}
+				<section aria-labelledby="hero-heading" className="relative overflow-hidden">
 				<div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
 				<div className="container relative mx-auto px-4 py-12 md:py-16">
 					<div className="mx-auto max-w-4xl text-center">
@@ -66,7 +73,7 @@ const AboutMeContent = async () => {
 						</h1>
 
 						<p className="mx-auto mb-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-							A <span className="font-semibold text-foreground">{site.title}</span> generating revenue since 2018.<br/>
+							A <span className="font-semibold text-foreground">{site.title}</span> generating revenue since <time dateTime="2018">2018</time>.<br/>
 							Hardened by tons of legacy code.
 						</p>
 
@@ -128,12 +135,12 @@ const AboutMeContent = async () => {
 							<AboutCard
 								icon={<Lightbulb className="size-5" />}
 								title="KISS Principle"
-								description="Keeping the architecture simple and stupid (KISS). Ensuring low resource usage by utilizing the most appropriate technologies."
+								description="Keep It Simple, Stupid. Building straightforward solutions that are easy to understand and maintain, without unnecessary complexity."
 							/>
 							<AboutCard
 								icon={<Wrench className="size-5" />}
 								title="UI/UX Focus"
-								description="Crafting simple, eye-friendly UI and delivering a smooth UX. Every pixel matters. "
+								description="Crafting simple, eye-friendly UI and delivering a smooth UX. Every pixel matters."
 								endIcon={
 									<HeartIcon className="size-4 inline mb-1 text-red-500 fill-red-500" />
 								}
@@ -142,7 +149,7 @@ const AboutMeContent = async () => {
 							<AboutCard
 								icon={<Rocket className="size-5" />}
 								title="Innovation Driven"
-								description="I have a desire for innovation and improvement, replacing outdated code with cutting-edge technologies"
+								description="I have a desire for innovation and improvement, replacing outdated code with cutting-edge technologies."
 							/>
 							<AboutCard
 								icon={<Zap className="size-5" />}
@@ -157,7 +164,7 @@ const AboutMeContent = async () => {
 							<AboutCard
 								icon={<BookOpen className="size-5" />}
 								title="Lifestyle and software"
-								description="I believe that learning a variety of information and skills in life enables the brain to make a better software solutions."
+								description="I believe that learning a variety of skills in life enables the brain to create better software solutions."
 							/>
 						</div>
 
@@ -264,8 +271,9 @@ const AboutMeContent = async () => {
 				</div>
 			</section>
 
-			<ContactSection />
-		</main>
+				<ContactSection />
+			</main>
+		</>
 	)
 }
 

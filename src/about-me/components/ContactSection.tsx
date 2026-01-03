@@ -29,8 +29,7 @@ export const ContactSection: FunctionComponent = () => {
 								Let&apos;s Connect
 							</CardTitle>
 							<CardDescription className="text-center">
-								I&apos;m open for communication, offers and
-								collaboration
+								Open for communication, opportunities, and collaboration
 							</CardDescription>
 						</CardHeader>
 						<CardContent className="pt-6">

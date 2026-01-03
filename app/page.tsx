@@ -5,28 +5,29 @@ import { JsonLd } from '@/src/about-me/components/JsonLd'
 export const metadata: Metadata = {
 	title: 'About Me | Full-Stack Developer',
 	description:
-		'Full-Stack Developer generating revenue since 2018. Specializing in Go, PHP, TypeScript, and React. Building scalable web applications with focus on clean architecture and great UX.',
+		'Full-Stack Developer since 2018. Expert in Go, PHP, TypeScript, and React. Building scalable web applications with clean architecture and exceptional UX.',
 	openGraph: {
 		title: 'l-you - Full-Stack Developer',
 		description:
-			'Full-Stack Developer since 2018. Building scalable web applications with Go, PHP, TypeScript, and React. Expert in legacy code modernization and UI/UX optimization.',
+			'Full-Stack Developer since 2018. Expert in Go, PHP, TypeScript, and React. Building scalable web applications with clean architecture and exceptional UX.',
 		type: 'profile',
 		url: '/',
 		images: [
 			{
-				url: 'https://2.gravatar.com/avatar/eb7387f4ea2542d6d90e970a9180ea931ece91bf0e826ba175e46d6fc7ccb585?size=512',
-				width: 512,
-				height: 512,
+				url: '/og-image.png',
+				width: 1200,
+				height: 630,
 				alt: 'l-you - Full-Stack Developer',
+				type: 'image/png',
 			},
 		],
 	},
 	twitter: {
-		card: 'summary',
+		card: 'summary_large_image',
 		title: 'l-you - Full-Stack Developer',
 		description:
-			'Full-Stack Developer since 2018. Go, PHP, TypeScript, React. Open for collaboration.',
-		images: ['https://2.gravatar.com/avatar/eb7387f4ea2542d6d90e970a9180ea931ece91bf0e826ba175e46d6fc7ccb585?size=512'],
+			'Full-Stack Developer since 2018. Expert in Go, PHP, TypeScript, and React. Building scalable web applications with clean architecture and exceptional UX.',
+		images: ['/og-image.png'],
 		creator: '@x_l_you',
 	},
 	keywords: [

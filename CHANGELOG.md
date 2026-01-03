@@ -5,7 +5,7 @@
 
 ### Features
 
-* more accuratetech stack ([62c907f](https://github.com/l-you/about-me/commit/62c907fe775328aa3230a6e7730fdfd0133d7920))
+* more accurate tech stack ([62c907f](https://github.com/l-you/about-me/commit/62c907fe775328aa3230a6e7730fdfd0133d7920))
 
 
 ### Bug Fixes
@@ -18,7 +18,7 @@
 ### Bug Fixes
 
 * adapt external icons for the light/dark theme ([230805b](https://github.com/l-you/about-me/commit/230805bde4dcff3d409d5ba809674458be750a0e))
-* increae image size for ebtter rendering ([e69f6f3](https://github.com/l-you/about-me/commit/e69f6f3ba76f3021a89f13d348dffa6f4d28710d))
+* increase image size for better rendering ([e69f6f3](https://github.com/l-you/about-me/commit/e69f6f3ba76f3021a89f13d348dffa6f4d28710d))
 
 ## [1.2.0](https://github.com/l-you/about-me/compare/v1.1.1...v1.2.0) (2026-01-03)
 
@@ -30,8 +30,8 @@
 
 ### Bug Fixes
 
-* helping three shaker by removing import * ([dfb7b85](https://github.com/l-you/about-me/commit/dfb7b85a6e28f7b48231d962e9c22811a802ed4b))
-* more three shaking ([250cf60](https://github.com/l-you/about-me/commit/250cf6065c3913de0d221712bc163f1a7529043b))
+* helping tree shaker by removing import * ([dfb7b85](https://github.com/l-you/about-me/commit/dfb7b85a6e28f7b48231d962e9c22811a802ed4b))
+* more tree shaking ([250cf60](https://github.com/l-you/about-me/commit/250cf6065c3913de0d221712bc163f1a7529043b))
 * reduce initial html size by extracting icons ([c720be8](https://github.com/l-you/about-me/commit/c720be81a45c4e78d190fe80976e2300f2e8f1b4))
 
 ## [1.1.1](https://github.com/l-you/about-me/compare/v1.1.0...v1.1.1) (2026-01-03)
@@ -53,7 +53,7 @@
 * CI with tests ([4132206](https://github.com/l-you/about-me/commit/4132206bee8e2e816e9caac09d3195f3c5087a78))
 * improve UX of the link to source code ([a729970](https://github.com/l-you/about-me/commit/a729970dcd149dfe5490f8164f99ba85164c11a9))
 * more accesible UI ([55a3097](https://github.com/l-you/about-me/commit/55a3097635edcf02801c50a65ff925db146d2291))
-* real giuthub tart during build time ([bf25687](https://github.com/l-you/about-me/commit/bf256873803b56138262c0df4da1e8b0564029d8))
+* real github stars during build time ([bf25687](https://github.com/l-you/about-me/commit/bf256873803b56138262c0df4da1e8b0564029d8))
 * replace emoji with real icon. ([cf19ac4](https://github.com/l-you/about-me/commit/cf19ac4c7df79b970b22f6ace9aca56b65535fc4))
 
 
