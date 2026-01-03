@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/l-you/about-me/compare/v1.4.0...v1.5.0) (2026-01-03)
+
+
+### Features
+
+* replace webserver with another rust-based solution to support 404 page and compression ([3a8e9e8](https://github.com/l-you/about-me/commit/3a8e9e8ddea953c9bc556a26f0fb83964518563d))
+
+
+### Bug Fixes
+
+* lockfile update ([a3b1020](https://github.com/l-you/about-me/commit/a3b10203287b7b15abcc6c94396f80eb74718552))
+
 ## [1.4.0](https://github.com/l-you/about-me/compare/v1.3.0...v1.4.0) (2026-01-03)
 
 
