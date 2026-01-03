@@ -253,7 +253,7 @@ const AboutMeContent: FunctionComponent = () => {
 								href="https://github.com/l-you/about-me"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="underline decoration-1 underline-offset-2 transition-colors hover:text-foreground">
+								className="underline decoration-1 underline-offset-2 transition-colors underline-offset-3 hover:text-foreground">
 								Explore source code
 							</Link> of this web page
 								</p>
