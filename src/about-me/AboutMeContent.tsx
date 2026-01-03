@@ -44,6 +44,8 @@ const AboutMeContent = async () => {
 									<Image
 								src={site.avatarThumbnailUrl}
 								alt={`${site.nickname} avatar`}
+								width={256}
+								height={256}
 										className="h-full w-full object-cover"
 									/>
 								</div>
