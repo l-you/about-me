@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.4.0](https://github.com/l-you/about-me/compare/v1.3.0...v1.4.0) (2026-01-03)
+
+
+### Features
+
+* add a good color contrast and cool text decoration to the generate og image. I like it. ([56dbf1f](https://github.com/l-you/about-me/commit/56dbf1f964ccc9048e702224529aa434ca2457e3))
+* generate OG images and othe meta images for SEO with @napi-rs/canvas . Make a auto generate og-image with the profile related info ([1394719](https://github.com/l-you/about-me/commit/1394719390036fb48daa621814201cc678aa11a8))
+
+
+### Bug Fixes
+
+* beter KISS description ([324942b](https://github.com/l-you/about-me/commit/324942b382c3d691993e44abfffd0050cf3448cb))
+* grammar ([dbf0308](https://github.com/l-you/about-me/commit/dbf0308f87619668cde4d23f8fa9b9a157d24a24))
+* grammar ([e9fdda3](https://github.com/l-you/about-me/commit/e9fdda320369b386adb233978660914523b531f2))
+* imporve seo with more tags and use avoid external resources for images ([a71e341](https://github.com/l-you/about-me/commit/a71e341d91b8528acc50bfe58c6ef5545dc712cf))
+
 ## [1.3.0](https://github.com/l-you/about-me/compare/v1.2.1...v1.3.0) (2026-01-03)
 
 
