@@ -47,7 +47,8 @@
        {
       "title": "Sea Battle Game",
       "description": "Browser Battleship with shareable link to play with others. Backend: Go; Frontend: Next.js.",
-      "href": "https://revotale.com/sea-battle-game"
+      "href": "https://revotale.com/sea-battle-game",
+        "icon":"gamepad"
       }
   ],
   "technologies": {
