@@ -74,7 +74,7 @@ export const ContactSection: FunctionComponent = () => {
 					{/* Footer Quote */}
 					<div className="mt-12 text-center">
 						<p className="italic text-muted-foreground flex items-center justify-center gap-1.5">
-							&quot;Made with passion <Heart className="size-4 fill-red-500 text-red-500 inline" />&quot;
+							&quot;Made with love <Heart className="size-4 fill-red-500 text-red-500 inline" />&quot;
 						</p>
 						<p className="mt-2 text-sm text-muted-foreground">
 							Elegant solutions for challenging tasks
