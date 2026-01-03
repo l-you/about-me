@@ -10,7 +10,6 @@ import {
 	BookOpen,
 	Code2,
 	Database,
-	Gamepad2,
 	HeartIcon,
 	Lightbulb,
 	Mail,
@@ -25,10 +24,10 @@ import Link from 'next/link'
 import type {FunctionComponent} from 'react'
 import {ContactSection} from './components/ContactSection'
 import {GitHubIcon, TechCategory} from './components/Icons'
-import {ProjectCard} from './components/ProjectCard'
+import {FeaturedProjects} from './components/FeaturedProjects'
 import Image from 'next/image'
 
-const AboutMeContent: FunctionComponent = () => {
+const AboutMeContent = async () => {
 	return (
 		<div className="min-h-screen bg-background">
 			{/* Hero Section */}
@@ -212,19 +211,7 @@ const AboutMeContent: FunctionComponent = () => {
 							Personal projects, open-source libraries, and tools I&apos;m building
 						</p>
 
-						<div className="grid gap-6 md:grid-cols-2">
-							{contentConfig.featuredProjects.map((project) => (
-								<ProjectCard
-									key={project.title}
-									title={project.title}
-									description={project.description}
-									stars={project.stars}
-									language={project.language}
-									icon={project.icon === 'gamepad' ? <Gamepad2 className="size-5" /> : project.icon === 'revotale'? <Image src="/icons/revotale.svg" alt="Revotale Logo" width={16} height={16} className="size-5"/> : null}
-									href={project.href}
-								/>
-							))}
-						</div>
+						<FeaturedProjects />
 
 						<div className="mt-8 text-center flex flex-col gap-2 max-w-full	items-center">
 							<p className="mx-auto max-w-2xl text-center text-muted-foreground text-base my-1">
