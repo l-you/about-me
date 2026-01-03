@@ -85,7 +85,7 @@ export async function FeaturedProjects() {
 						project.icon === 'gamepad' ? (
 							<Gamepad2 className="size-5" />
 						) : project.icon === 'revotale' ? (
-							<Image
+							<Image loading='lazy'
 								src="/icons/revotale.svg"
 								alt="Revotale Logo"
 								width={16}

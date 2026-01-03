@@ -21,7 +21,8 @@ export const TechIcon: FunctionComponent<TechIconProps> = ({
 
 	return (
 		<Image
-			src={iconUrl}
+			src={iconUrl} 
+			loading='lazy'
 			alt={`${name} icon`}
 			width={16}
 			height={16}

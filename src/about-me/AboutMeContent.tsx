@@ -41,7 +41,7 @@ const AboutMeContent = async () => {
 							<div className="relative">
 								<div className="absolute -inset-1 rounded-full bg-linear-to-r from-primary/20 to-accent/20 blur-md" />
 								<div className="relative flex h-32 w-32 items-center justify-center rounded-full border-2 border-border bg-card overflow-hidden shadow-lg">
-									<Image
+									<Image loading='eager'
 								src={site.avatarThumbnailUrl}
 								alt={`${site.nickname} avatar`}
 								width={256}
