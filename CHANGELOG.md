@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/l-you/about-me/compare/v1.1.0...v1.1.1) (2026-01-03)
+
+
+### Bug Fixes
+
+* icon validation failed ([3f922ee](https://github.com/l-you/about-me/commit/3f922ee58d0665562dbe11cb3b33899d86326246))
+
 ## [1.1.0](https://github.com/l-you/about-me/compare/v1.0.7...v1.1.0) (2026-01-03)
 
 
