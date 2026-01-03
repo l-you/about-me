@@ -13,7 +13,7 @@ import MoreContactsSection from './MoreContactsSection'
 import ContactButton from './ContextButton'
 import { connectButtonClassName, ConnectButtonContent } from './connectButtonSkeleton'
 import contentConfig from '@/config/content.json'
-
+import 'server-only'
 const { site } = contentConfig;
 
 export const ContactSection: FunctionComponent = () => {
