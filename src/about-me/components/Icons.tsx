@@ -37,6 +37,7 @@ export const GitHubIcon: FunctionComponent<{className?: string}> = ({
 }) => (
 	<Image
 		src="/icons/github.svg"
+		loading='lazy'
 		alt="GitHub"
 		width={20}
 		height={20}
@@ -47,6 +48,7 @@ export const GitHubIcon: FunctionComponent<{className?: string}> = ({
 export const XIcon: FunctionComponent<{className?: string}> = ({className}) => (
 	<Image
 		src="/icons/x.svg"
+		loading='lazy'
 		alt="X (Twitter)"
 		width={20}
 		height={20}
@@ -59,6 +61,7 @@ export const RedditIcon: FunctionComponent<{className?: string}> = ({
 }) => (
 	<Image
 		src="/icons/reddit.svg"
+		loading='lazy'
 		alt="Reddit"
 		width={20}
 		height={20}
@@ -71,6 +74,7 @@ export const NpmIcon: FunctionComponent<{className?: string}> = ({
 }) => (
 	<Image
 		src="/icons/npm.svg"
+		loading='lazy'
 		alt="npm"
 		width={20}
 		height={20}
@@ -83,6 +87,7 @@ export const PackagistIcon: FunctionComponent<{className?: string}> = ({
 }) => (
 	<Image
 		src="/icons/packagist.svg"
+		loading='lazy'
 		alt="Packagist"
 		width={20}
 		height={20}
@@ -95,6 +100,7 @@ export const StarIcon: FunctionComponent<{className?: string}> = ({
 }) => (
 	<Image
 		src="/icons/star.svg"
+		loading='lazy'
 		alt="Star"
 		width={16}
 		height={16}
