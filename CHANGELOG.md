@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/l-you/about-me/compare/v1.1.1...v1.2.0) (2026-01-03)
+
+
+### Features
+
+* force server ([aaef56e](https://github.com/l-you/about-me/commit/aaef56ec91d30476d114017173b888255ae8c7a8))
+
+
+### Bug Fixes
+
+* helping three shaker by removing import * ([dfb7b85](https://github.com/l-you/about-me/commit/dfb7b85a6e28f7b48231d962e9c22811a802ed4b))
+* more three shaking ([250cf60](https://github.com/l-you/about-me/commit/250cf6065c3913de0d221712bc163f1a7529043b))
+* reduce initial html size by extracting icons ([c720be8](https://github.com/l-you/about-me/commit/c720be81a45c4e78d190fe80976e2300f2e8f1b4))
+
 ## [1.1.1](https://github.com/l-you/about-me/compare/v1.1.0...v1.1.1) (2026-01-03)
 
 
