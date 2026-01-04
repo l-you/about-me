@@ -1,7 +1,7 @@
 {
-  "name": "l-you - Full-Stack Developer Portfolio",
+  "name": "l-you - Full-Stack Engineer Portfolio",
   "short_name": "l-you",
-  "description": "Full-Stack Developer since 2018. Building scalable web applications with Go, PHP, TypeScript, and React.",
+  "description": "Full-Stack Engineer since 2018. Building scalable web applications with Go, PHP, TypeScript, and React.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
