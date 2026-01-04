@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/l-you/about-me/compare/v1.6.0...v1.7.0) (2026-01-04)
+
+
+### Features
+
+* use more appropriate namings ([a8a9604](https://github.com/l-you/about-me/commit/a8a960479102cba2acfddd084f575ed345c5a7fc))
+
 ## [1.6.0](https://github.com/l-you/about-me/compare/v1.5.0...v1.6.0) (2026-01-03)
 
 
