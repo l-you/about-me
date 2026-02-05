@@ -44,14 +44,12 @@
     {
       "title": "next-scroll-restorer",
       "description": "Scroll restoration for Next.js apps built with app directory. Addresses critical bugs which Next.js team is not going to fix..",
-      "stars": 107,
       "language": "TypeScript",
       "href": "https://github.com/RevoTale/next-scroll-restorer"
     },
     {
       "title": "obsidian-folder-by-tags",
       "description": "Automatically organize Obsidian notes into folders by tags for better knowledge management.",
-      "stars": 12,
       "language": "TypeScript",
       "href": "https://github.com/RevoTale/obsidian-folder-by-tags-distributor"
     }

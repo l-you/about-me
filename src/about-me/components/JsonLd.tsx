@@ -1,4 +1,5 @@
 import contentConfig from '@/config/content.json'
+import {getFeaturedProjects} from '@/src/about-me/lib/featured-projects'
 
 const { site } = contentConfig;
 
@@ -7,7 +8,8 @@ const { site } = contentConfig;
  * Implements ProfilePage schema with Person entity per Google's guidelines
  * @see https://developers.google.com/search/docs/appearance/structured-data/profile-page
  */
-export function JsonLd() {
+export async function JsonLd() {
+	const projects = await getFeaturedProjects()
 	const structuredData = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfilePage',
@@ -74,7 +76,7 @@ export function JsonLd() {
 				],
 			},
 		},
-		hasPart: contentConfig.featuredProjects
+		hasPart: projects
 			.filter((project) => project.href.includes('github.com'))
 			.map((project) => ({
 				'@type': 'SoftwareSourceCode',
