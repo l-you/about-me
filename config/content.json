@@ -25,6 +25,23 @@
   },
   "featuredProjects": [
     {
+      "title": "Sea Battle Game",
+      "description": "Browser Battleship with shareable link to play with others. Backend: Go; Frontend: Next.js.",
+      "href": "https://revotale.com/sea-battle-game",
+        "icon":"gamepad"
+      },
+    {
+        "title":"RevoTale",
+        "description":"A platform showcasing my projects and blog posts.",
+        "icon":"revotale",
+        "href":"https://revotale.com"
+    },
+    {
+      "title": "Lovely Eye",
+      "description": "Modern, lightweight, privacy-focused analytics. Open-source and designed to self-host; simpler low-RAM alternative to Umami, Plausible, and Matomo.",
+      "href": "https://github.com/RevoTale/lovely-eye"
+    },
+    {
       "title": "next-scroll-restorer",
       "description": "Scroll restoration for Next.js apps built with app directory. Addresses critical bugs which Next.js team is not going to fix..",
       "stars": 107,
@@ -32,26 +49,12 @@
       "href": "https://github.com/RevoTale/next-scroll-restorer"
     },
     {
-        "title":"RevoTale",
-        "description":"A platform showcasing my projects and blog posts.",
-        "icon":"revotale",
-        "href":"https://revotale.com"
-    },
- 
-  
-    {
       "title": "obsidian-folder-by-tags",
       "description": "Automatically organize Obsidian notes into folders by tags for better knowledge management.",
       "stars": 12,
       "language": "TypeScript",
       "href": "https://github.com/RevoTale/obsidian-folder-by-tags-distributor"
-    },
-       {
-      "title": "Sea Battle Game",
-      "description": "Browser Battleship with shareable link to play with others. Backend: Go; Frontend: Next.js.",
-      "href": "https://revotale.com/sea-battle-game",
-        "icon":"gamepad"
-      }
+    }
   ],
   "technologies": {
     "programmingLanguages": [
