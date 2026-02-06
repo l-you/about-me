@@ -9,6 +9,7 @@ A static portfolio website built with Next.js and Tailwind CSS. The site is expo
 - shadcn/ui
 - TypeScript
 - Bun
+- Go (code generation)
 - Rust (production server)
 
 ## Configuration
@@ -22,7 +23,7 @@ Add to `config/content.json`:
 { "name": "Your Technology", "icon": "yourtechnology" }
 ```
 
-Run `bun run generate:icons` to auto-fetch missing icons from [devicon.dev](https://devicon.dev) or [simpleicons.org](https://simpleicons.org).
+Run `task gen` to auto-fetch missing icons from [devicon.dev](https://devicon.dev) or [simpleicons.org](https://simpleicons.org), regenerate avatar-derived assets, and validate config.
 
 Categories are configurable.
 
@@ -41,8 +42,6 @@ bun run build
 ## Validate
 
 ```bash
-bun run validate          # Validate config and icons
-bun run validate:content  # Config validation only
-bun run generate:icons    # Icon generation only
+task gen  # Generate + validate all artifacts
+task validate  # Alias of generate
 ```
-

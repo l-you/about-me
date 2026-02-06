@@ -1,0 +1,26 @@
+version: '3'
+
+tasks:
+  lint:
+    desc: Run ESLint
+    cmd: bunx eslint
+  typecheck:
+    desc: Typescript validation
+    cmd: bunx tsc
+  gen:
+    desc: Alias for full code generation and validation
+    cmds:
+      - cmd: go run ./scripts/codegen
+
+  validate:
+    desc: Alias for full code generation and validation
+    cmds:
+      - task: typecheck
+      - task: lint
+
+  gen:validate:
+    desc: Lint, run codegen, and ensure generated files are committed
+    cmds:
+      - task: gen
+      - cmd: git diff --exit-code
+      - cmd: test -z "$(git status --porcelain)"
