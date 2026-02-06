@@ -14,7 +14,8 @@ A static portfolio website built with Next.js and Tailwind CSS. The site is expo
 
 ## Configuration
 
-Projects and technologies are configurable via `config/content.json`.
+Projects and technologies are configurable via `config/content.json`. 
+GitHub stars are being fetched during build time.
 
 ### Adding a Technology
 
