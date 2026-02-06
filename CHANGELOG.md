@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.0](https://github.com/l-you/about-me/compare/v1.7.0...v1.8.0) (2026-02-06)
+
+
+### Features
+
+* add lovely eye to project list ([3bbf9f8](https://github.com/l-you/about-me/commit/3bbf9f8a912d7e8c2daca60f2e1d8b43ddaac097))
+* migrate generation pipeline to Go and enforce codegen sync in CI ([e6b5da6](https://github.com/l-you/about-me/commit/e6b5da612c1501e4204760339a822ec5c34269f3))
+
 ## [1.7.0](https://github.com/l-you/about-me/compare/v1.6.0...v1.7.0) (2026-01-04)
 
 
